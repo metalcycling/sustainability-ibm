@@ -14,7 +14,7 @@ function measure()
         echo -n ${power_draw}/${power_limit}
     done
 
-    echo
+    echo " "
 }
 
 while true
