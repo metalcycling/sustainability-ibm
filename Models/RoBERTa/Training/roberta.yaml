@@ -1,0 +1,78 @@
+# Job name and namespace
+namespace: mcad-testing
+jobName: roberta-sustainability
+priority: "low-priority"
+
+# Container image to be used
+containerImage: ghcr.io/foundation-model-stack/base:pytorch-latest-nightly-20230212
+
+# Runtime hardware specificiations
+numPods: 1
+numCpusPerPod: 2
+numGpusPerPod: 1
+totalMemoryPerPod: 64Gi
+terminationGracePeriodSeconds: 1
+
+# Multinic support
+multiNicNetworkName: multi-nic-network
+
+# Environment
+environmentVariables:
+    - name: NCCL_MIN_NCHANNELS
+      value: "2"
+    - name: CUDA_VISIBLE_DEVICES
+      #value: "0,1,2,3,4,5,6,7"
+      value: "0"
+    - name: NCCL_TREE_THRESHOLD
+      value: "0"
+    - name: NCCL_ALGO
+      value: Ring # Tree
+    - name: NCCL_IGNORE_CPU_AFFINITY
+      value: "1"
+    - name: NCCL_DEBUG_SUBSYS
+      value: INIT,GRAPH,ENV,TUNING
+    - name: NCCL_SOCKET_NTHREADS
+      value: "2"
+    - name: NCCL_IB_DISABLE
+      value: "1"
+    - name: NCCL_NSOCKS_PERTHREAD
+      value: "4"
+    - name: NCCL_DEBUG
+      value: INFO
+    - name: PYTHONPATH
+      value: /workspace/foundation-model-stack
+    - name: BATCH_SIZE
+      value: 64
+    - name: NUM_STEPS
+      value: 400000
+    - name: OUTPUT_DIR
+      value: output
+    - name: COMPONENT_VERSION
+      value: 1
+    - name: HOME
+      value: "/workspace"
+
+# GIT configuration
+sshGitCloneConfig:
+    secretName: ssh-key-secret
+    configMapName: ssh-key-configmap
+
+# Commands
+setupCommands:
+    - echo "export LOCAL_RANK=$((${RANK} % ${WORLD_SIZE}))" > .bashrc
+    - pip install aim ipython
+    - git clone git@github.ibm.com:ai-foundation/foundation-model-stack.git
+    - cd /workspace/foundation-model-stack/fm && pip install .
+    - cd /workspace/foundation-model-stack/nlp && pip install .
+    - sleep infinity
+
+# Volumes
+volumes:
+    - name: scratch
+      claimName: mcad-testing-pvc
+      mountPath: /workspace/data
+
+# Requeuing
+requeuing:
+    timeInSeconds: 120
+    growthType: "none"
