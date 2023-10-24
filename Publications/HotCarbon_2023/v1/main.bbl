@@ -1,0 +1,75 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{00}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{{\tt DOI:}\penalty0{#1}\ }
+  \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
+
+\bibitem[\protect\citeauthoryear{Puri, Kung, Janssen, Zhang, Domeniconi,
+  Zolotov, Dolby, Chen, Choudhury, Decker, Thost, Buratti, Pujar, Ramji,
+  Finkler, Malaika, and Reiss}{Puri et~al\mbox{.}}{2021}]%
+        {puri2021codenet}
+{Ruchir Puri}, {David~S. Kung}, {Geert Janssen}, {Wei Zhang}, {Giacomo
+  Domeniconi}, {Vladimir Zolotov}, {Julian Dolby}, {Jie Chen}, {Mihir
+  Choudhury}, {Lindsey Decker}, {Veronika Thost}, {Luca Buratti}, {Saurabh
+  Pujar}, {Shyam Ramji}, {Ulrich Finkler}, {Susan Malaika}, {and} {Frederick
+  Reiss}. 2021.
+\newblock CodeNet: A Large-Scale AI for Code Dataset for Learning a Diversity
+  of Coding Tasks.
+\newblock   (2021).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Rous}{Rous}{2008}]%
+        {Rous08}
+{Bernard Rous}. 2008.
+\newblock \showarticletitle{The Enabling of Digital Libraries}.
+\newblock {\em Digital Libraries\/} {12}, 3, Article 5 (July 2008).
+\newblock
+\newblock
+\shownote{To appear.}
+
+
+\bibitem[\protect\citeauthoryear{Zitnick, Chanussot, Das, Goyal, Heras-Domingo,
+  Ho, Hu, Lavril, Palizhati, Riviere, Shuaibi, Sriram, Tran, Wood, Yoon,
+  Parikh, and Ulissi}{Zitnick et~al\mbox{.}}{2020}]%
+        {zitnick2020}
+{C.~Lawrence Zitnick}, {Lowik Chanussot}, {Abhishek Das}, {Siddharth Goyal},
+  {Javier Heras-Domingo}, {Caleb Ho}, {Weihua Hu}, {Thibaut Lavril}, {Aini
+  Palizhati}, {Morgane Riviere}, {Muhammed Shuaibi}, {Anuroop Sriram}, {Kevin
+  Tran}, {Brandon Wood}, {Junwoong Yoon}, {Devi Parikh}, {and} {Zachary
+  Ulissi}. 2020.
+\newblock An Introduction to Electrocatalyst Design using Machine Learning for
+  Renewable Energy Storage.
+\newblock   (2020).
+\newblock
+
+
+\end{thebibliography}

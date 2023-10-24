@@ -1,0 +1,87 @@
+% Preamble
+\documentclass[sigconf]{acmart}
+
+% Packages
+\usepackage{lipsum}
+\usepackage{comment}
+\usepackage{units}
+
+\setlength{\textfloatsep}{10pt plus 1.0pt minus 2.0pt}
+\setlength{\floatsep}{6.0pt plus 1.0pt minus 1.0pt}
+\setlength{\intextsep}{6.0pt plus 1.0pt minus 1.0pt}
+
+%\usepackage[shortlabels]{enumitem}
+%\setlist[enumerate]{nosep}
+
+% Document
+\begin{document}
+    \title{Towards a Methodology and Framework for AI Sustainability Metrics}
+
+    \author{Tamar Eilam} \email{eilamt@us.ibm.com} \orcid{xxxx-xxxx-xxxx-xxxx}
+    \author{Pedro D. Bello-Maldonado} \email{pedro.bello@ibm.com} \orcid{0000-0003-0691-5204}
+    \author{Bishwaranjan Bhattacharjee} \email{bhatta@us.ibm.com} \orcid{xxxx-xxxx-xxxx-xxxx}
+    \author{Carlos Costa} \email{chcost@us.ibm.com} \orcid{xxxx-xxxx-xxxx-xxxx}
+    \author{Eun K. Lee} \email{eunkyung.lee@us.ibm.com} \orcid{xxxx-xxxx-xxxx-xxxx}
+    \author{Asser Tantawi} \email{tantawi@us.ibm.com} \orcid{0000-0001-6598-8863}
+    \affiliation{
+        \institution{IBM Research}
+        \streetaddress{1101 Kitchawan Rd}
+        \city{Yorktown Heights}
+        \state{New York}
+        \country{United States}
+        \postcode{10598}
+    }
+    
+    \renewcommand{\shortauthors}{Tamar Eilam et al.}
+
+    \begin{abstract}
+        Recently, we are witnessing truly groundbreaking achievements using AI models, such as the much talked about generative large language models, the broader area of foundation models, and the wide range of applications with a tremendous potential to accelerate scientific discovery, and enhance productivity. AI models and their use are growing at a super-linear pace leading to staggering environmental footprint implications. Inference jobs are measured by the trillions, and model parameters by the billions. This scaling up comes with a tremendous environmental cost, associated with every aspect of models' life cycle: data preparation, pre-training, and post deployment re-training, inference, and, the embodied emission of the systems used to support the execution. There is an urgent need for the community to come together and conduct a meaningful conversation about the environmental cost of AI.
+        To do that, we ought to develop an agreed upon set of metrics, methodology, and framework to quantify AI's sustainability cost in a holistic and complete fashion. \typeout{Moreover, recent advances brought to the front the concept of foundation models, promoting model re-use through a process of distillation and fine tuning, along with a debate around the most cost effective strategy: downstream distillation of large broad models vs. train-from-scratch of smaller focused models. A unified sustainability metric can enable an informed  debate about this question.} In this paper, we propose unified AI Sustainability metrics that can help foster a sustainability mind-set and enable analysis, and strategy setting. To do that, we build on and extend the data center sustainability metrics, defined in ~\cite{Gandhi2022}, by introducing (for the first time to our knowledge) the concept of {\em embodied product emission (EPC)} to capture the creation cost of software assets, such as software platforms, models, and data-sets. We then use this new concept to expand the job sustainability cost metrics ($JCS$ and $ASC$) offered in~\cite{Gandhi2022} to factor in the context of the execution of jobs, such as a platform as-a-service, or a model serving inference jobs. The result is applicable to any data center job, not just for AI, and contributes towards accuracy and completeness. We then show how to apply this approach to AI, with a particular focus on the entire life cycle, including all phases of the life cycle, as well as the provenance of models, where one model is used (distilled) to create another one. We demonstrate how the metric can be used to inform a more meaningful debate about AI strategies and cost.
+    \end{abstract}
+
+\begin{CCSXML}
+<ccs2012>
+   <concept>
+       <concept_id>10002951.10003227.10003228.10010925</concept_id>
+       <concept_desc>Information systems~Data centers</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10003456.10003457.10003458.10010921</concept_id>
+       <concept_desc>Social and professional topics~Sustainability</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10002944.10011123.10011124</concept_id>
+       <concept_desc>General and reference~Metrics</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10002944.10011123.10010916</concept_id>
+       <concept_desc>General and reference~Measurement</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+ </ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Information systems~Data centers}
+\ccsdesc[500]{Social and professional topics~Sustainability}
+\ccsdesc[500]{General and reference~Metrics}
+\ccsdesc[500]{General and reference~Measurement}
+
+    \keywords{green AI, foundation models, sustainable AI, sustainable computing}
+
+    \maketitle
+
+    % Sections
+    \input{Sections/background}
+    \input{Sections/metric}
+    \input{Sections/opportunities}
+    
+    \appendix
+
+    % Bibliography
+    \bibliographystyle{ACM-Reference-Format}
+    \bibliography{references}
+\end{document}
+

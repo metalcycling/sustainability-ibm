@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: ACM-Reference-Format-Journals.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: acmtog-sample-bibfile.bib
+Warning--I didn't find a database entry for "stark2022equibind"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--articleno field, but no numpages field, in Rous08
+Warning--page numbers missing in both pages and numpages fields in Rous08
+Warning--require pages or numpages fields with articleno field in Rous08
+You've used 3 entries,
+            5290 wiz_defined-function locations,
+            1439 strings with 18074 characters,
+and the built_in function-call counts, 4062 in all, are:
+= -- 371
+> -- 410
+< -- 0
++ -- 144
+- -- 144
+* -- 436
+:= -- 618
+add.period$ -- 16
+call.type$ -- 3
+change.case$ -- 47
+chr.to.int$ -- 3
+cite$ -- 6
+duplicate$ -- 174
+empty$ -- 133
+format.name$ -- 152
+if$ -- 815
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 3
+newline$ -- 60
+num.names$ -- 24
+pop$ -- 96
+preamble$ -- 1
+purify$ -- 62
+quote$ -- 0
+skip$ -- 47
+stack$ -- 0
+substring$ -- 140
+swap$ -- 10
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 42
+warning$ -- 3
+while$ -- 16
+width$ -- 0
+write$ -- 85
+(There were 4 warnings)

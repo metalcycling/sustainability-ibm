@@ -1,0 +1,1037 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{51}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[ghg(2023a)]%
+        {ghg-potoc}
+ \bibinfo{year}{2023}\natexlab{a}.
+\newblock \bibinfo{title}{The GHG Protocol}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://ghgprotocol.org}
+\showURL{%
+\tempurl}
+
+
+\bibitem[ghg(2023b)]%
+        {ghg-guid}
+ \bibinfo{year}{2023}\natexlab{b}.
+\newblock \bibinfo{title}{ICT Sector Guidance Built on the GHG Protocol Product
+  Life Cycle Accounting and Reporting Standard}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.gesi.org/research/ict-sector-guidance-built-on-the-ghg-protocol-product-life-cycle-accounting-and-reporting-standard}
+\showURL{%
+\tempurl}
+
+
+\bibitem[lca(2023)]%
+        {lca}
+ \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Life Cycle Assessment (LCA)}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{http://www.epa.gov/nrmrl/std/lca/lca.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Agrawal et~al\mbox{.}(2016)]%
+        {7738674}
+\bibfield{author}{\bibinfo{person}{Ankur Agrawal}, \bibinfo{person}{Jungwook
+  Choi}, \bibinfo{person}{Kailash Gopalakrishnan}, \bibinfo{person}{Suyog
+  Gupta}, \bibinfo{person}{Ravi Nair}, \bibinfo{person}{Jinwook Oh},
+  \bibinfo{person}{Daniel~A. Prener}, \bibinfo{person}{Sunil Shukla},
+  \bibinfo{person}{Vijayalakshmi Srinivasan}, {and} \bibinfo{person}{Zehra
+  Sura}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Approximate computing: Challenges and
+  opportunities}. In \bibinfo{booktitle}{\emph{2016 IEEE International
+  Conference on Rebooting Computing (ICRC)}}. \bibinfo{pages}{1--8}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRC.2016.7738674}
+\showDOI{\tempurl}
+
+
+\bibitem[Barroso et~al\mbox{.}(2013)]%
+        {dc_computer}
+\bibfield{author}{\bibinfo{person}{Luiz~Andr Barroso}, \bibinfo{person}{Jimmy
+  Clidaras}, {and} \bibinfo{person}{Urs Hlzle}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{The Datacenter as a Computer: An
+  Introduction to the Design of Warehouse-Scale Machines}
+  (\bibinfo{edition}{2nd} ed.)}.
+\newblock \bibinfo{publisher}{Morgan & Claypool Publishers}.
+\newblock
+\showISBNx{1627050094}
+
+
+\bibitem[Bommasani et~al\mbox{.}(2022)]%
+        {stanford-fm}
+\bibfield{author}{\bibinfo{person}{Rishi Bommasani}, \bibinfo{person}{Drew~A.
+  Hudson}, \bibinfo{person}{Ehsan Adeli}, \bibinfo{person}{Russ Altman},
+  \bibinfo{person}{Simran Arora}, \bibinfo{person}{Sydney von Arx},
+  \bibinfo{person}{Michael~S. Bernstein}, \bibinfo{person}{Jeannette Bohg},
+  \bibinfo{person}{Antoine Bosselut}, \bibinfo{person}{Emma Brunskill},
+  \bibinfo{person}{Erik Brynjolfsson}, \bibinfo{person}{Shyamal Buch},
+  \bibinfo{person}{Dallas Card}, \bibinfo{person}{Rodrigo Castellon},
+  \bibinfo{person}{Niladri Chatterji}, \bibinfo{person}{Annie Chen},
+  \bibinfo{person}{Kathleen Creel}, \bibinfo{person}{Jared~Quincy Davis},
+  \bibinfo{person}{Dora Demszky}, \bibinfo{person}{Chris Donahue},
+  \bibinfo{person}{Moussa Doumbouya}, \bibinfo{person}{Esin Durmus},
+  \bibinfo{person}{Stefano Ermon}, \bibinfo{person}{John Etchemendy},
+  \bibinfo{person}{Kawin Ethayarajh}, \bibinfo{person}{Li Fei-Fei},
+  \bibinfo{person}{Chelsea Finn}, \bibinfo{person}{Trevor Gale},
+  \bibinfo{person}{Lauren Gillespie}, \bibinfo{person}{Karan Goel},
+  \bibinfo{person}{Noah Goodman}, \bibinfo{person}{Shelby Grossman},
+  \bibinfo{person}{Neel Guha}, \bibinfo{person}{Tatsunori Hashimoto},
+  \bibinfo{person}{Peter Henderson}, \bibinfo{person}{John Hewitt},
+  \bibinfo{person}{Daniel~E. Ho}, \bibinfo{person}{Jenny Hong},
+  \bibinfo{person}{Kyle Hsu}, \bibinfo{person}{Jing Huang},
+  \bibinfo{person}{Thomas Icard}, \bibinfo{person}{Saahil Jain},
+  \bibinfo{person}{Dan Jurafsky}, \bibinfo{person}{Pratyusha Kalluri},
+  \bibinfo{person}{Siddharth Karamcheti}, \bibinfo{person}{Geoff Keeling},
+  \bibinfo{person}{Fereshte Khani}, \bibinfo{person}{Omar Khattab},
+  \bibinfo{person}{Pang~Wei Koh}, \bibinfo{person}{Mark Krass},
+  \bibinfo{person}{Ranjay Krishna}, \bibinfo{person}{Rohith Kuditipudi},
+  \bibinfo{person}{Ananya Kumar}, \bibinfo{person}{Faisal Ladhak},
+  \bibinfo{person}{Mina Lee}, \bibinfo{person}{Tony Lee}, \bibinfo{person}{Jure
+  Leskovec}, \bibinfo{person}{Isabelle Levent}, \bibinfo{person}{Xiang~Lisa
+  Li}, \bibinfo{person}{Xuechen Li}, \bibinfo{person}{Tengyu Ma},
+  \bibinfo{person}{Ali Malik}, \bibinfo{person}{Christopher~D. Manning},
+  \bibinfo{person}{Suvir Mirchandani}, \bibinfo{person}{Eric Mitchell},
+  \bibinfo{person}{Zanele Munyikwa}, \bibinfo{person}{Suraj Nair},
+  \bibinfo{person}{Avanika Narayan}, \bibinfo{person}{Deepak Narayanan},
+  \bibinfo{person}{Ben Newman}, \bibinfo{person}{Allen Nie},
+  \bibinfo{person}{Juan~Carlos Niebles}, \bibinfo{person}{Hamed Nilforoshan},
+  \bibinfo{person}{Julian Nyarko}, \bibinfo{person}{Giray Ogut},
+  \bibinfo{person}{Laurel Orr}, \bibinfo{person}{Isabel Papadimitriou},
+  \bibinfo{person}{Joon~Sung Park}, \bibinfo{person}{Chris Piech},
+  \bibinfo{person}{Eva Portelance}, \bibinfo{person}{Christopher Potts},
+  \bibinfo{person}{Aditi Raghunathan}, \bibinfo{person}{Rob Reich},
+  \bibinfo{person}{Hongyu Ren}, \bibinfo{person}{Frieda Rong},
+  \bibinfo{person}{Yusuf Roohani}, \bibinfo{person}{Camilo Ruiz},
+  \bibinfo{person}{Jack Ryan}, \bibinfo{person}{Christopher Ré},
+  \bibinfo{person}{Dorsa Sadigh}, \bibinfo{person}{Shiori Sagawa},
+  \bibinfo{person}{Keshav Santhanam}, \bibinfo{person}{Andy Shih},
+  \bibinfo{person}{Krishnan Srinivasan}, \bibinfo{person}{Alex Tamkin},
+  \bibinfo{person}{Rohan Taori}, \bibinfo{person}{Armin~W. Thomas},
+  \bibinfo{person}{Florian Tramèr}, \bibinfo{person}{Rose~E. Wang},
+  \bibinfo{person}{William Wang}, \bibinfo{person}{Bohan Wu},
+  \bibinfo{person}{Jiajun Wu}, \bibinfo{person}{Yuhuai Wu},
+  \bibinfo{person}{Sang~Michael Xie}, \bibinfo{person}{Michihiro Yasunaga},
+  \bibinfo{person}{Jiaxuan You}, \bibinfo{person}{Matei Zaharia},
+  \bibinfo{person}{Michael Zhang}, \bibinfo{person}{Tianyi Zhang},
+  \bibinfo{person}{Xikun Zhang}, \bibinfo{person}{Yuhui Zhang},
+  \bibinfo{person}{Lucia Zheng}, \bibinfo{person}{Kaitlyn Zhou}, {and}
+  \bibinfo{person}{Percy Liang}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{On the Opportunities and Risks of Foundation Models}.
+\newblock
+\newblock
+\showeprint[arxiv]{2108.07258}~[cs.LG]
+
+
+\bibitem[Brooks et~al\mbox{.}(2000)]%
+        {888701}
+\bibfield{author}{\bibinfo{person}{D.M. Brooks}, \bibinfo{person}{P. Bose},
+  \bibinfo{person}{S.E. Schuster}, \bibinfo{person}{H. Jacobson},
+  \bibinfo{person}{P.N. Kudva}, \bibinfo{person}{A. Buyuktosunoglu},
+  \bibinfo{person}{J. Wellman}, \bibinfo{person}{V. Zyuban},
+  \bibinfo{person}{M. Gupta}, {and} \bibinfo{person}{P.W. Cook}.}
+  \bibinfo{year}{2000}\natexlab{}.
+\newblock \showarticletitle{Power-aware microarchitecture: design and modeling
+  challenges for next-generation microprocessors}.
+\newblock \bibinfo{journal}{\emph{IEEE Micro}} \bibinfo{volume}{20},
+  \bibinfo{number}{6} (\bibinfo{year}{2000}), \bibinfo{pages}{26--44}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/40.888701}
+\showDOI{\tempurl}
+
+
+\bibitem[Brown et~al\mbox{.}(2020)]%
+        {brown2020language}
+\bibfield{author}{\bibinfo{person}{Tom Brown}, \bibinfo{person}{Benjamin Mann},
+  \bibinfo{person}{Nick Ryder}, \bibinfo{person}{Melanie Subbiah},
+  \bibinfo{person}{Jared~D Kaplan}, \bibinfo{person}{Prafulla Dhariwal},
+  \bibinfo{person}{Arvind Neelakantan}, \bibinfo{person}{Pranav Shyam},
+  \bibinfo{person}{Girish Sastry}, \bibinfo{person}{Amanda Askell},
+  {et~al\mbox{.}}} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Language models are few-shot learners}.
+\newblock \bibinfo{journal}{\emph{Advances in neural information processing
+  systems}}  \bibinfo{volume}{33} (\bibinfo{year}{2020}),
+  \bibinfo{pages}{1877--1901}.
+\newblock
+
+
+\bibitem[Capra et~al\mbox{.}(2020)]%
+        {capra2020updated}
+\bibfield{author}{\bibinfo{person}{Maurizio Capra}, \bibinfo{person}{Beatrice
+  Bussolino}, \bibinfo{person}{Alberto Marchisio}, \bibinfo{person}{Muhammad
+  Shafique}, \bibinfo{person}{Guido Masera}, {and} \bibinfo{person}{Maurizio
+  Martina}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{An updated survey of efficient hardware
+  architectures for accelerating deep convolutional neural networks}.
+\newblock \bibinfo{journal}{\emph{Future Internet}} \bibinfo{volume}{12},
+  \bibinfo{number}{7} (\bibinfo{year}{2020}), \bibinfo{pages}{113}.
+\newblock
+
+
+\bibitem[Castelvecchi(2019)]%
+        {aidanger}
+\bibfield{author}{\bibinfo{person}{Davide Castelvecchi}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{AI pioneer: ‘The dangers of abuse are very
+  real’}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1038/d41586-019-00505-2}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Chauhan and Kandlikar(2019)]%
+        {CHAUHAN2019450}
+\bibfield{author}{\bibinfo{person}{Aranya Chauhan} {and}
+  \bibinfo{person}{Satish~G. Kandlikar}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Characterization of a dual taper thermosiphon loop
+  for CPU cooling in data centers}.
+\newblock \bibinfo{journal}{\emph{Applied Thermal Engineering}}
+  \bibinfo{volume}{146} (\bibinfo{year}{2019}), \bibinfo{pages}{450--458}.
+\newblock
+\showISSN{1359-4311}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.applthermaleng.2018.10.010}
+\showDOI{\tempurl}
+
+
+\bibitem[Chien et~al\mbox{.}(2020)]%
+        {chien2020beyond}
+\bibfield{author}{\bibinfo{person}{A. Chien}, \bibinfo{person}{C. Zhang}, {and}
+  \bibinfo{person}{V. Lin, L.~Rao}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{Beyond PUE: Flexible Datacenters Empowering the Cloud
+  to Decarbonize}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://hotcarbon.org/pdf/hotcarbon22-chien.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[COS(2023)]%
+        {cos}
+\bibfield{author}{\bibinfo{person}{COS}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{IBM Cloud Object Storage}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.ibm.com/cloud/object-storage}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Dayarathna et~al\mbox{.}(2016)]%
+        {7279063}
+\bibfield{author}{\bibinfo{person}{Miyuru Dayarathna},
+  \bibinfo{person}{Yonggang Wen}, {and} \bibinfo{person}{Rui Fan}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Data Center Energy Consumption Modeling: A Survey}.
+\newblock \bibinfo{journal}{\emph{IEEE Communications Surveys & Tutorials}}
+  \bibinfo{volume}{18}, \bibinfo{number}{1} (\bibinfo{year}{2016}),
+  \bibinfo{pages}{732--794}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/COMST.2015.2481183}
+\showDOI{\tempurl}
+
+
+\bibitem[Desislavov et~al\mbox{.}(2023)]%
+        {DESISLAVOV2023100857}
+\bibfield{author}{\bibinfo{person}{Radosvet Desislavov},
+  \bibinfo{person}{Fernando Martínez-Plumed}, {and} \bibinfo{person}{José
+  Hernández-Orallo}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Trends in AI inference energy consumption: Beyond
+  the performance-vs-parameter laws of deep learning}.
+\newblock \bibinfo{journal}{\emph{Sustainable Computing: Informatics and
+  Systems}}  \bibinfo{volume}{38} (\bibinfo{year}{2023}),
+  \bibinfo{pages}{100857}.
+\newblock
+\showISSN{2210-5379}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.suscom.2023.100857}
+\showDOI{\tempurl}
+
+
+\bibitem[Devlin et~al\mbox{.}(2018)]%
+        {devlin2018bert}
+\bibfield{author}{\bibinfo{person}{Jacob Devlin}, \bibinfo{person}{Ming-Wei
+  Chang}, \bibinfo{person}{Kenton Lee}, {and} \bibinfo{person}{Kristina
+  Toutanova}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Bert: Pre-training of deep bidirectional
+  transformers for language understanding}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1810.04805}}
+  (\bibinfo{year}{2018}).
+\newblock
+
+
+\bibitem[Eilam(2021)]%
+        {Eilam2021Towards}
+\bibfield{author}{\bibinfo{person}{Tamar Eilam}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Towards Transparent and Trustworthy Cloud Carbon
+  Accounting}. In \bibinfo{booktitle}{\emph{Proceedings of the 22nd
+  International Middleware Conference: Extended Abstracts}} (Virtual Event,
+  Canada) \emph{(\bibinfo{series}{Middleware '21})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{1–5}.
+\newblock
+\showISBNx{9781450391924}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3501255.3501408}
+\showDOI{\tempurl}
+
+
+\bibitem[Foundation(2023)]%
+        {SCI}
+\bibfield{author}{\bibinfo{person}{Green~Software Foundation}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{software-carbon-intensity-sci-specification-project}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://greensoftware.foundation/articles/software-carbon-intensity-sci-specification-project}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Gandhi et~al\mbox{.}(2022)]%
+        {gandhi2022metrics}
+\bibfield{author}{\bibinfo{person}{Anshul Gandhi}, \bibinfo{person}{Kanad
+  Ghose}, \bibinfo{person}{Kartik Gopalan}, \bibinfo{person}{Syed~Rafiul
+  Hussain}, \bibinfo{person}{Dongyoon Lee}, \bibinfo{person}{David Liu},
+  \bibinfo{person}{Zhenhua Liu}, \bibinfo{person}{Patrick McDaniel},
+  \bibinfo{person}{Shuai Mu}, {and} \bibinfo{person}{Erez Zadok10}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Metrics for Sustainability in Data Centers}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 1st Workshop on Sustainable
+  Computer Systems Design and Implementation (HotCarbon'22)}}.
+\newblock
+
+
+\bibitem[GSF(2023)]%
+        {GSF}
+\bibfield{author}{\bibinfo{person}{GSF}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Green Software Foundation}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://greensoftware.foundation}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Gupta et~al\mbox{.}(2020)]%
+        {gupta2020chasing}
+\bibfield{author}{\bibinfo{person}{Udit Gupta}, \bibinfo{person}{Young~Geun
+  Kim}, \bibinfo{person}{Sylvia Lee}, \bibinfo{person}{Jordan Tse},
+  \bibinfo{person}{Hsien-Hsin~S. Lee}, \bibinfo{person}{Gu-Yeon Wei},
+  \bibinfo{person}{David Brooks}, {and} \bibinfo{person}{Carole-Jean Wu}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{Chasing Carbon: The Elusive Environmental Footprint
+  of Computing}.
+\newblock
+\newblock
+\showeprint[arxiv]{2011.02839}~[cs.AR]
+
+
+\bibitem[Henderson et~al\mbox{.}(2020)]%
+        {Henderson2020Towards}
+\bibfield{author}{\bibinfo{person}{Peter Henderson}, \bibinfo{person}{Jieru
+  Hu}, \bibinfo{person}{Joshua Romoff}, \bibinfo{person}{Emma Brunskill},
+  \bibinfo{person}{Dan Jurafsky}, {and} \bibinfo{person}{Joelle Pineau}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Towards the Systematic Reporting of the Energy and
+  Carbon Footprints of Machine Learning}.
+\newblock \bibinfo{journal}{\emph{J. Mach. Learn. Res.}} \bibinfo{volume}{21},
+  \bibinfo{number}{1} (\bibinfo{date}{jan} \bibinfo{year}{2020}).
+\newblock
+\showISSN{1532-4435}
+
+
+\bibitem[IKS(2023)]%
+        {iks}
+\bibfield{author}{\bibinfo{person}{IKS}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{IBM Cloud Kubernetes Service}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.ibm.com/cloud/kubernetes-service}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Jiang et~al\mbox{.}(2020)]%
+        {jiang2020power}
+\bibfield{author}{\bibinfo{person}{Qingye Jiang}, \bibinfo{person}{Young~Choon
+  Lee}, {and} \bibinfo{person}{Albert~Y Zomaya}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{The power of ARM64 in public clouds}. In
+  \bibinfo{booktitle}{\emph{2020 20th IEEE/ACM International Symposium on
+  Cluster, Cloud and Internet Computing (CCGRID)}}. IEEE,
+  \bibinfo{pages}{459--468}.
+\newblock
+
+
+\bibitem[Jouppi et~al\mbox{.}(2023)]%
+        {jouppi2023tpu}
+\bibfield{author}{\bibinfo{person}{Norman~P Jouppi}, \bibinfo{person}{George
+  Kurian}, \bibinfo{person}{Sheng Li}, \bibinfo{person}{Peter Ma},
+  \bibinfo{person}{Rahul Nagarajan}, \bibinfo{person}{Lifeng Nai},
+  \bibinfo{person}{Nishant Patil}, \bibinfo{person}{Suvinay Subramanian},
+  \bibinfo{person}{Andy Swing}, \bibinfo{person}{Brian Towles},
+  {et~al\mbox{.}}} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Tpu v4: An optically reconfigurable supercomputer
+  for machine learning with hardware support for embeddings}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2304.01433}}
+  (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Kanagasubaraja et~al\mbox{.}(2022)]%
+        {9752582}
+\bibfield{author}{\bibinfo{person}{S. Kanagasubaraja}, \bibinfo{person}{M.
+  Hema}, \bibinfo{person}{K. Valarmathi}, \bibinfo{person}{Naveen Kumar},
+  \bibinfo{person}{Bala Pradeep~M Kumar}, {and} \bibinfo{person}{N Balaji}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Energy Optimization Algorithm to Reduce Power
+  Consumption in Cloud Data Center}. In \bibinfo{booktitle}{\emph{2022
+  International Conference on Advances in Computing, Communication and Applied
+  Informatics (ACCAI)}}. \bibinfo{pages}{1--8}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ACCAI53970.2022.9752582}
+\showDOI{\tempurl}
+
+
+\bibitem[Lacoste et~al\mbox{.}(2019)]%
+        {lacoste2019quantifying}
+\bibfield{author}{\bibinfo{person}{Alexandre Lacoste},
+  \bibinfo{person}{Alexandra Luccioni}, \bibinfo{person}{Victor Schmidt}, {and}
+  \bibinfo{person}{Thomas Dandres}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{Quantifying the Carbon Emissions of Machine
+  Learning}.
+\newblock
+\newblock
+\showeprint[arxiv]{1910.09700}~[cs.CY]
+
+
+\bibitem[Lambda(2023)]%
+        {lambda}
+\bibfield{author}{\bibinfo{person}{Lambda}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{AWS Lambda}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://aws.amazon.com/lambda/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Lee et~al\mbox{.}(2017)]%
+        {7229319}
+\bibfield{author}{\bibinfo{person}{Eun~Kyung Lee},
+  \bibinfo{person}{Hariharasudhan Viswanathan}, {and} \bibinfo{person}{Dario
+  Pompili}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Proactive Thermal-Aware Resource Management in
+  Virtualized HPC Cloud Datacenters}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Cloud Computing}}
+  \bibinfo{volume}{5}, \bibinfo{number}{2} (\bibinfo{year}{2017}),
+  \bibinfo{pages}{234--248}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TCC.2015.2474368}
+\showDOI{\tempurl}
+
+
+\bibitem[Lenherr et~al\mbox{.}(2021)]%
+        {Lenherr2021new}
+\bibfield{author}{\bibinfo{person}{N. Lenherr}, \bibinfo{person}{R. Pawlitzek},
+  {and} \bibinfo{person}{B. Michel}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{New universal sustainability metrics to assess edge
+  intelligence}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.suscom.2021.100580}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Lewis et~al\mbox{.}(2019)]%
+        {lewis2019bart}
+\bibfield{author}{\bibinfo{person}{Mike Lewis}, \bibinfo{person}{Yinhan Liu},
+  \bibinfo{person}{Naman Goyal}, \bibinfo{person}{Marjan Ghazvininejad},
+  \bibinfo{person}{Abdelrahman Mohamed}, \bibinfo{person}{Omer Levy},
+  \bibinfo{person}{Ves Stoyanov}, {and} \bibinfo{person}{Luke Zettlemoyer}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Bart: Denoising sequence-to-sequence pre-training
+  for natural language generation, translation, and comprehension}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1910.13461}}
+  (\bibinfo{year}{2019}).
+\newblock
+
+
+\bibitem[Libovick{\'{y}} et~al\mbox{.}(2019)]%
+        {DBLP:journals/corr/abs-1911-03310}
+\bibfield{author}{\bibinfo{person}{Jindrich Libovick{\'{y}}},
+  \bibinfo{person}{Rudolf Rosa}, {and} \bibinfo{person}{Alexander Fraser}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{How Language-Neutral is Multilingual BERT?}
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1911.03310}
+  (\bibinfo{year}{2019}).
+\newblock
+\showeprint[arXiv]{1911.03310}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1911.03310}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Liu et~al\mbox{.}(2019)]%
+        {liu2019roberta}
+\bibfield{author}{\bibinfo{person}{Yinhan Liu}, \bibinfo{person}{Myle Ott},
+  \bibinfo{person}{Naman Goyal}, \bibinfo{person}{Jingfei Du},
+  \bibinfo{person}{Mandar Joshi}, \bibinfo{person}{Danqi Chen},
+  \bibinfo{person}{Omer Levy}, \bibinfo{person}{Mike Lewis},
+  \bibinfo{person}{Luke Zettlemoyer}, {and} \bibinfo{person}{Veselin
+  Stoyanov}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Roberta: A robustly optimized bert pretraining
+  approach}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1907.11692}}
+  (\bibinfo{year}{2019}).
+\newblock
+
+
+\bibitem[Mukherjee et~al\mbox{.}(2020)]%
+        {mukherjee2020detailed}
+\bibfield{author}{\bibinfo{person}{Dibyendu Mukherjee},
+  \bibinfo{person}{Srabanti Chakraborty}, \bibinfo{person}{Indranil Sarkar},
+  \bibinfo{person}{Ahona Ghosh}, {and} \bibinfo{person}{Sandip Roy}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{A detailed study on data centre energy efficiency
+  and efficient cooling techniques}.
+\newblock \bibinfo{journal}{\emph{International Journal}} \bibinfo{volume}{9},
+  \bibinfo{number}{5} (\bibinfo{year}{2020}).
+\newblock
+
+
+\bibitem[Patterson et~al\mbox{.}(2021)]%
+        {patterson2021carbon}
+\bibfield{author}{\bibinfo{person}{David Patterson}, \bibinfo{person}{Joseph
+  Gonzalez}, \bibinfo{person}{Quoc Le}, \bibinfo{person}{Chen Liang},
+  \bibinfo{person}{Lluis-Miquel Munguia}, \bibinfo{person}{Daniel Rothchild},
+  \bibinfo{person}{David So}, \bibinfo{person}{Maud Texier}, {and}
+  \bibinfo{person}{Jeff Dean}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{Carbon Emissions and Large Neural Network Training}.
+\newblock
+\newblock
+\showeprint[arxiv]{2104.10350}~[cs.LG]
+
+
+\bibitem[Puri et~al\mbox{.}(2021)]%
+        {puri2021codenet}
+\bibfield{author}{\bibinfo{person}{Ruchir Puri}, \bibinfo{person}{David~S.
+  Kung}, \bibinfo{person}{Geert Janssen}, \bibinfo{person}{Wei Zhang},
+  \bibinfo{person}{Giacomo Domeniconi}, \bibinfo{person}{Vladimir Zolotov},
+  \bibinfo{person}{Julian Dolby}, \bibinfo{person}{Jie Chen},
+  \bibinfo{person}{Mihir Choudhury}, \bibinfo{person}{Lindsey Decker},
+  \bibinfo{person}{Veronika Thost}, \bibinfo{person}{Luca Buratti},
+  \bibinfo{person}{Saurabh Pujar}, \bibinfo{person}{Shyam Ramji},
+  \bibinfo{person}{Ulrich Finkler}, \bibinfo{person}{Susan Malaika}, {and}
+  \bibinfo{person}{Frederick Reiss}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{CodeNet: A Large-Scale AI for Code Dataset for
+  Learning a Diversity of Coding Tasks}.
+\newblock
+\newblock
+\showeprint[arxiv]{2105.12655}~[cs.SE]
+
+
+\bibitem[Raffel et~al\mbox{.}(2020)]%
+        {raffel2020exploring}
+\bibfield{author}{\bibinfo{person}{Colin Raffel}, \bibinfo{person}{Noam
+  Shazeer}, \bibinfo{person}{Adam Roberts}, \bibinfo{person}{Katherine Lee},
+  \bibinfo{person}{Sharan Narang}, \bibinfo{person}{Michael Matena},
+  \bibinfo{person}{Yanqi Zhou}, \bibinfo{person}{Wei Li}, {and}
+  \bibinfo{person}{Peter~J Liu}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Exploring the limits of transfer learning with a
+  unified text-to-text transformer}.
+\newblock \bibinfo{journal}{\emph{The Journal of Machine Learning Research}}
+  \bibinfo{volume}{21}, \bibinfo{number}{1} (\bibinfo{year}{2020}),
+  \bibinfo{pages}{5485--5551}.
+\newblock
+
+
+\bibitem[Ross et~al\mbox{.}(2022)]%
+        {ross2022large}
+\bibfield{author}{\bibinfo{person}{Jerret Ross}, \bibinfo{person}{Brian
+  Belgodere}, \bibinfo{person}{Vijil Chenthamarakshan}, \bibinfo{person}{Inkit
+  Padhi}, \bibinfo{person}{Youssef Mroueh}, {and} \bibinfo{person}{Payel Das}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Large-scale chemical language representations
+  capture molecular structure and properties}.
+\newblock \bibinfo{journal}{\emph{Nature Machine Intelligence}}
+  \bibinfo{volume}{4}, \bibinfo{number}{12} (\bibinfo{year}{2022}),
+  \bibinfo{pages}{1256--1264}.
+\newblock
+
+
+\bibitem[Rostirolla et~al\mbox{.}(2022)]%
+        {ROSTIROLLA2022111787}
+\bibfield{author}{\bibinfo{person}{G. Rostirolla}, \bibinfo{person}{L. Grange},
+  \bibinfo{person}{T. Minh-Thuyen}, \bibinfo{person}{P. Stolf},
+  \bibinfo{person}{J.M. Pierson}, \bibinfo{person}{G. {Da Costa}},
+  \bibinfo{person}{G. Baudic}, \bibinfo{person}{M. Haddad}, \bibinfo{person}{A.
+  Kassab}, \bibinfo{person}{J.M. Nicod}, \bibinfo{person}{L. Philippe},
+  \bibinfo{person}{V. Rehn-Sonigo}, \bibinfo{person}{R. Roche},
+  \bibinfo{person}{B. Celik}, \bibinfo{person}{S. Caux}, {and}
+  \bibinfo{person}{J. Lecuivre}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{A survey of challenges and solutions for the
+  integration of renewable energy in datacenters}.
+\newblock \bibinfo{journal}{\emph{Renewable and Sustainable Energy Reviews}}
+  \bibinfo{volume}{155} (\bibinfo{year}{2022}), \bibinfo{pages}{111787}.
+\newblock
+\showISSN{1364-0321}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.rser.2021.111787}
+\showDOI{\tempurl}
+
+
+\bibitem[Sanh et~al\mbox{.}(2019a)]%
+        {DBLP:journals/corr/abs-1910-01108}
+\bibfield{author}{\bibinfo{person}{Victor Sanh}, \bibinfo{person}{Lysandre
+  Debut}, \bibinfo{person}{Julien Chaumond}, {and} \bibinfo{person}{Thomas
+  Wolf}.} \bibinfo{year}{2019}\natexlab{a}.
+\newblock \showarticletitle{DistilBERT, a distilled version of {BERT:} smaller,
+  faster, cheaper and lighter}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1910.01108}
+  (\bibinfo{year}{2019}).
+\newblock
+\showeprint[arXiv]{1910.01108}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1910.01108}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Sanh et~al\mbox{.}(2019b)]%
+        {distillbert}
+\bibfield{author}{\bibinfo{person}{Victor Sanh}, \bibinfo{person}{Lysandre
+  Debut}, \bibinfo{person}{Julien Chaumond}, {and} \bibinfo{person}{Thomas
+  Wolf}.} \bibinfo{year}{2019}\natexlab{b}.
+\newblock \showarticletitle{DistilBERT, a distilled version of {BERT:} smaller,
+  faster, cheaper and lighter}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1910.01108}
+  (\bibinfo{year}{2019}).
+\newblock
+\showeprint[arXiv]{1910.01108}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1910.01108}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Schwartz et~al\mbox{.}(2019)]%
+        {schwartz2019green}
+\bibfield{author}{\bibinfo{person}{Roy Schwartz}, \bibinfo{person}{Jesse
+  Dodge}, \bibinfo{person}{Noah~A. Smith}, {and} \bibinfo{person}{Oren
+  Etzioni}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{Green AI}.
+\newblock
+\newblock
+\showeprint[arxiv]{1907.10597}~[cs.CY]
+
+
+\bibitem[Strubell et~al\mbox{.}(2019)]%
+        {Strubell-policy-19}
+\bibfield{author}{\bibinfo{person}{Emma Strubell}, \bibinfo{person}{Ananya
+  Ganesh}, {and} \bibinfo{person}{Andrew McCallum}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Energy and Policy Considerations for Deep Learning
+  in {NLP}}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1906.02243}
+  (\bibinfo{year}{2019}).
+\newblock
+\showeprint[arXiv]{1906.02243}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1906.02243}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Stärk et~al\mbox{.}(2022)]%
+        {stark2022equibind}
+\bibfield{author}{\bibinfo{person}{Hannes Stärk},
+  \bibinfo{person}{Octavian-Eugen Ganea}, \bibinfo{person}{Lagnajit Pattanaik},
+  \bibinfo{person}{Regina Barzilay}, {and} \bibinfo{person}{Tommi Jaakkola}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{EquiBind: Geometric Deep Learning for Drug Binding
+  Structure Prediction}.
+\newblock
+\newblock
+\showeprint[arxiv]{2202.05146}~[q-bio.BM]
+
+
+\bibitem[Thrun(1998)]%
+        {thrun1998lifelong}
+\bibfield{author}{\bibinfo{person}{Sebastian Thrun}.}
+  \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{Lifelong Learning Algorithms.}
+\newblock \bibinfo{journal}{\emph{Learning to learn}}  \bibinfo{volume}{8}
+  (\bibinfo{year}{1998}), \bibinfo{pages}{181--209}.
+\newblock
+
+
+\bibitem[Touvron et~al\mbox{.}(2023)]%
+        {touvron2023llama}
+\bibfield{author}{\bibinfo{person}{Hugo Touvron}, \bibinfo{person}{Thibaut
+  Lavril}, \bibinfo{person}{Gautier Izacard}, \bibinfo{person}{Xavier
+  Martinet}, \bibinfo{person}{Marie-Anne Lachaux}, \bibinfo{person}{Timothée
+  Lacroix}, \bibinfo{person}{Baptiste Rozière}, \bibinfo{person}{Naman Goyal},
+  \bibinfo{person}{Eric Hambro}, \bibinfo{person}{Faisal Azhar},
+  \bibinfo{person}{Aurelien Rodriguez}, \bibinfo{person}{Armand Joulin},
+  \bibinfo{person}{Edouard Grave}, {and} \bibinfo{person}{Guillaume Lample}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{LLaMA: Open and Efficient Foundation Language
+  Models}.
+\newblock
+\newblock
+\showeprint[arxiv]{2302.13971}~[cs.CL]
+
+
+\bibitem[Workshop et~al\mbox{.}(2023)]%
+        {workshop2023bloom}
+\bibfield{author}{\bibinfo{person}{BigScience Workshop}, \bibinfo{person}{:},
+  \bibinfo{person}{Teven~Le Scao}, \bibinfo{person}{Angela Fan},
+  \bibinfo{person}{Christopher Akiki}, \bibinfo{person}{Ellie Pavlick},
+  \bibinfo{person}{Suzana Ilić}, \bibinfo{person}{Daniel Hesslow},
+  \bibinfo{person}{Roman Castagné}, \bibinfo{person}{Alexandra~Sasha
+  Luccioni}, \bibinfo{person}{François Yvon}, \bibinfo{person}{Matthias
+  Gallé}, \bibinfo{person}{Jonathan Tow}, \bibinfo{person}{Alexander~M. Rush},
+  \bibinfo{person}{Stella Biderman}, \bibinfo{person}{Albert Webson},
+  \bibinfo{person}{Pawan~Sasanka Ammanamanchi}, \bibinfo{person}{Thomas Wang},
+  \bibinfo{person}{Benoît Sagot}, \bibinfo{person}{Niklas Muennighoff},
+  \bibinfo{person}{Albert~Villanova del Moral}, \bibinfo{person}{Olatunji
+  Ruwase}, \bibinfo{person}{Rachel Bawden}, \bibinfo{person}{Stas Bekman},
+  \bibinfo{person}{Angelina McMillan-Major}, \bibinfo{person}{Iz Beltagy},
+  \bibinfo{person}{Huu Nguyen}, \bibinfo{person}{Lucile Saulnier},
+  \bibinfo{person}{Samson Tan}, \bibinfo{person}{Pedro~Ortiz Suarez},
+  \bibinfo{person}{Victor Sanh}, \bibinfo{person}{Hugo Laurençon},
+  \bibinfo{person}{Yacine Jernite}, \bibinfo{person}{Julien Launay},
+  \bibinfo{person}{Margaret Mitchell}, \bibinfo{person}{Colin Raffel},
+  \bibinfo{person}{Aaron Gokaslan}, \bibinfo{person}{Adi Simhi},
+  \bibinfo{person}{Aitor Soroa}, \bibinfo{person}{Alham~Fikri Aji},
+  \bibinfo{person}{Amit Alfassy}, \bibinfo{person}{Anna Rogers},
+  \bibinfo{person}{Ariel~Kreisberg Nitzav}, \bibinfo{person}{Canwen Xu},
+  \bibinfo{person}{Chenghao Mou}, \bibinfo{person}{Chris Emezue},
+  \bibinfo{person}{Christopher Klamm}, \bibinfo{person}{Colin Leong},
+  \bibinfo{person}{Daniel van Strien}, \bibinfo{person}{David~Ifeoluwa
+  Adelani}, \bibinfo{person}{Dragomir Radev},
+  \bibinfo{person}{Eduardo~González Ponferrada}, \bibinfo{person}{Efrat
+  Levkovizh}, \bibinfo{person}{Ethan Kim}, \bibinfo{person}{Eyal~Bar Natan},
+  \bibinfo{person}{Francesco~De Toni}, \bibinfo{person}{Gérard Dupont},
+  \bibinfo{person}{Germán Kruszewski}, \bibinfo{person}{Giada Pistilli},
+  \bibinfo{person}{Hady Elsahar}, \bibinfo{person}{Hamza Benyamina},
+  \bibinfo{person}{Hieu Tran}, \bibinfo{person}{Ian Yu}, \bibinfo{person}{Idris
+  Abdulmumin}, \bibinfo{person}{Isaac Johnson}, \bibinfo{person}{Itziar
+  Gonzalez-Dios}, \bibinfo{person}{Javier de~la Rosa}, \bibinfo{person}{Jenny
+  Chim}, \bibinfo{person}{Jesse Dodge}, \bibinfo{person}{Jian Zhu},
+  \bibinfo{person}{Jonathan Chang}, \bibinfo{person}{Jörg Frohberg},
+  \bibinfo{person}{Joseph Tobing}, \bibinfo{person}{Joydeep Bhattacharjee},
+  \bibinfo{person}{Khalid Almubarak}, \bibinfo{person}{Kimbo Chen},
+  \bibinfo{person}{Kyle Lo}, \bibinfo{person}{Leandro~Von Werra},
+  \bibinfo{person}{Leon Weber}, \bibinfo{person}{Long Phan},
+  \bibinfo{person}{Loubna~Ben allal}, \bibinfo{person}{Ludovic Tanguy},
+  \bibinfo{person}{Manan Dey}, \bibinfo{person}{Manuel~Romero Muñoz},
+  \bibinfo{person}{Maraim Masoud}, \bibinfo{person}{María Grandury},
+  \bibinfo{person}{Mario Šaško}, \bibinfo{person}{Max Huang},
+  \bibinfo{person}{Maximin Coavoux}, \bibinfo{person}{Mayank Singh},
+  \bibinfo{person}{Mike Tian-Jian Jiang}, \bibinfo{person}{Minh~Chien Vu},
+  \bibinfo{person}{Mohammad~A. Jauhar}, \bibinfo{person}{Mustafa Ghaleb},
+  \bibinfo{person}{Nishant Subramani}, \bibinfo{person}{Nora Kassner},
+  \bibinfo{person}{Nurulaqilla Khamis}, \bibinfo{person}{Olivier Nguyen},
+  \bibinfo{person}{Omar Espejel}, \bibinfo{person}{Ona de Gibert},
+  \bibinfo{person}{Paulo Villegas}, \bibinfo{person}{Peter Henderson},
+  \bibinfo{person}{Pierre Colombo}, \bibinfo{person}{Priscilla Amuok},
+  \bibinfo{person}{Quentin Lhoest}, \bibinfo{person}{Rheza Harliman},
+  \bibinfo{person}{Rishi Bommasani}, \bibinfo{person}{Roberto~Luis López},
+  \bibinfo{person}{Rui Ribeiro}, \bibinfo{person}{Salomey Osei},
+  \bibinfo{person}{Sampo Pyysalo}, \bibinfo{person}{Sebastian Nagel},
+  \bibinfo{person}{Shamik Bose}, \bibinfo{person}{Shamsuddeen~Hassan Muhammad},
+  \bibinfo{person}{Shanya Sharma}, \bibinfo{person}{Shayne Longpre},
+  \bibinfo{person}{Somaieh Nikpoor}, \bibinfo{person}{Stanislav Silberberg},
+  \bibinfo{person}{Suhas Pai}, \bibinfo{person}{Sydney Zink},
+  \bibinfo{person}{Tiago~Timponi Torrent}, \bibinfo{person}{Timo Schick},
+  \bibinfo{person}{Tristan Thrush}, \bibinfo{person}{Valentin Danchev},
+  \bibinfo{person}{Vassilina Nikoulina}, \bibinfo{person}{Veronika Laippala},
+  \bibinfo{person}{Violette Lepercq}, \bibinfo{person}{Vrinda Prabhu},
+  \bibinfo{person}{Zaid Alyafeai}, \bibinfo{person}{Zeerak Talat},
+  \bibinfo{person}{Arun Raja}, \bibinfo{person}{Benjamin Heinzerling},
+  \bibinfo{person}{Chenglei Si}, \bibinfo{person}{Davut~Emre Taşar},
+  \bibinfo{person}{Elizabeth Salesky}, \bibinfo{person}{Sabrina~J. Mielke},
+  \bibinfo{person}{Wilson~Y. Lee}, \bibinfo{person}{Abheesht Sharma},
+  \bibinfo{person}{Andrea Santilli}, \bibinfo{person}{Antoine Chaffin},
+  \bibinfo{person}{Arnaud Stiegler}, \bibinfo{person}{Debajyoti Datta},
+  \bibinfo{person}{Eliza Szczechla}, \bibinfo{person}{Gunjan Chhablani},
+  \bibinfo{person}{Han Wang}, \bibinfo{person}{Harshit Pandey},
+  \bibinfo{person}{Hendrik Strobelt}, \bibinfo{person}{Jason~Alan Fries},
+  \bibinfo{person}{Jos Rozen}, \bibinfo{person}{Leo Gao},
+  \bibinfo{person}{Lintang Sutawika}, \bibinfo{person}{M~Saiful Bari},
+  \bibinfo{person}{Maged~S. Al-shaibani}, \bibinfo{person}{Matteo Manica},
+  \bibinfo{person}{Nihal Nayak}, \bibinfo{person}{Ryan Teehan},
+  \bibinfo{person}{Samuel Albanie}, \bibinfo{person}{Sheng Shen},
+  \bibinfo{person}{Srulik Ben-David}, \bibinfo{person}{Stephen~H. Bach},
+  \bibinfo{person}{Taewoon Kim}, \bibinfo{person}{Tali Bers},
+  \bibinfo{person}{Thibault Fevry}, \bibinfo{person}{Trishala Neeraj},
+  \bibinfo{person}{Urmish Thakker}, \bibinfo{person}{Vikas Raunak},
+  \bibinfo{person}{Xiangru Tang}, \bibinfo{person}{Zheng-Xin Yong},
+  \bibinfo{person}{Zhiqing Sun}, \bibinfo{person}{Shaked Brody},
+  \bibinfo{person}{Yallow Uri}, \bibinfo{person}{Hadar Tojarieh},
+  \bibinfo{person}{Adam Roberts}, \bibinfo{person}{Hyung~Won Chung},
+  \bibinfo{person}{Jaesung Tae}, \bibinfo{person}{Jason Phang},
+  \bibinfo{person}{Ofir Press}, \bibinfo{person}{Conglong Li},
+  \bibinfo{person}{Deepak Narayanan}, \bibinfo{person}{Hatim Bourfoune},
+  \bibinfo{person}{Jared Casper}, \bibinfo{person}{Jeff Rasley},
+  \bibinfo{person}{Max Ryabinin}, \bibinfo{person}{Mayank Mishra},
+  \bibinfo{person}{Minjia Zhang}, \bibinfo{person}{Mohammad Shoeybi},
+  \bibinfo{person}{Myriam Peyrounette}, \bibinfo{person}{Nicolas Patry},
+  \bibinfo{person}{Nouamane Tazi}, \bibinfo{person}{Omar Sanseviero},
+  \bibinfo{person}{Patrick von Platen}, \bibinfo{person}{Pierre Cornette},
+  \bibinfo{person}{Pierre~François Lavallée}, \bibinfo{person}{Rémi
+  Lacroix}, \bibinfo{person}{Samyam Rajbhandari}, \bibinfo{person}{Sanchit
+  Gandhi}, \bibinfo{person}{Shaden Smith}, \bibinfo{person}{Stéphane Requena},
+  \bibinfo{person}{Suraj Patil}, \bibinfo{person}{Tim Dettmers},
+  \bibinfo{person}{Ahmed Baruwa}, \bibinfo{person}{Amanpreet Singh},
+  \bibinfo{person}{Anastasia Cheveleva}, \bibinfo{person}{Anne-Laure Ligozat},
+  \bibinfo{person}{Arjun Subramonian}, \bibinfo{person}{Aurélie Névéol},
+  \bibinfo{person}{Charles Lovering}, \bibinfo{person}{Dan Garrette},
+  \bibinfo{person}{Deepak Tunuguntla}, \bibinfo{person}{Ehud Reiter},
+  \bibinfo{person}{Ekaterina Taktasheva}, \bibinfo{person}{Ekaterina
+  Voloshina}, \bibinfo{person}{Eli Bogdanov}, \bibinfo{person}{Genta~Indra
+  Winata}, \bibinfo{person}{Hailey Schoelkopf}, \bibinfo{person}{Jan-Christoph
+  Kalo}, \bibinfo{person}{Jekaterina Novikova}, \bibinfo{person}{Jessica~Zosa
+  Forde}, \bibinfo{person}{Jordan Clive}, \bibinfo{person}{Jungo Kasai},
+  \bibinfo{person}{Ken Kawamura}, \bibinfo{person}{Liam Hazan},
+  \bibinfo{person}{Marine Carpuat}, \bibinfo{person}{Miruna Clinciu},
+  \bibinfo{person}{Najoung Kim}, \bibinfo{person}{Newton Cheng},
+  \bibinfo{person}{Oleg Serikov}, \bibinfo{person}{Omer Antverg},
+  \bibinfo{person}{Oskar van~der Wal}, \bibinfo{person}{Rui Zhang},
+  \bibinfo{person}{Ruochen Zhang}, \bibinfo{person}{Sebastian Gehrmann},
+  \bibinfo{person}{Shachar Mirkin}, \bibinfo{person}{Shani Pais},
+  \bibinfo{person}{Tatiana Shavrina}, \bibinfo{person}{Thomas Scialom},
+  \bibinfo{person}{Tian Yun}, \bibinfo{person}{Tomasz Limisiewicz},
+  \bibinfo{person}{Verena Rieser}, \bibinfo{person}{Vitaly Protasov},
+  \bibinfo{person}{Vladislav Mikhailov}, \bibinfo{person}{Yada Pruksachatkun},
+  \bibinfo{person}{Yonatan Belinkov}, \bibinfo{person}{Zachary Bamberger},
+  \bibinfo{person}{Zdeněk Kasner}, \bibinfo{person}{Alice Rueda},
+  \bibinfo{person}{Amanda Pestana}, \bibinfo{person}{Amir Feizpour},
+  \bibinfo{person}{Ammar Khan}, \bibinfo{person}{Amy Faranak},
+  \bibinfo{person}{Ana Santos}, \bibinfo{person}{Anthony Hevia},
+  \bibinfo{person}{Antigona Unldreaj}, \bibinfo{person}{Arash Aghagol},
+  \bibinfo{person}{Arezoo Abdollahi}, \bibinfo{person}{Aycha Tammour},
+  \bibinfo{person}{Azadeh HajiHosseini}, \bibinfo{person}{Bahareh Behroozi},
+  \bibinfo{person}{Benjamin Ajibade}, \bibinfo{person}{Bharat Saxena},
+  \bibinfo{person}{Carlos~Muñoz Ferrandis}, \bibinfo{person}{Danish
+  Contractor}, \bibinfo{person}{David Lansky}, \bibinfo{person}{Davis David},
+  \bibinfo{person}{Douwe Kiela}, \bibinfo{person}{Duong~A. Nguyen},
+  \bibinfo{person}{Edward Tan}, \bibinfo{person}{Emi Baylor},
+  \bibinfo{person}{Ezinwanne Ozoani}, \bibinfo{person}{Fatima Mirza},
+  \bibinfo{person}{Frankline Ononiwu}, \bibinfo{person}{Habib Rezanejad},
+  \bibinfo{person}{Hessie Jones}, \bibinfo{person}{Indrani Bhattacharya},
+  \bibinfo{person}{Irene Solaiman}, \bibinfo{person}{Irina Sedenko},
+  \bibinfo{person}{Isar Nejadgholi}, \bibinfo{person}{Jesse Passmore},
+  \bibinfo{person}{Josh Seltzer}, \bibinfo{person}{Julio~Bonis Sanz},
+  \bibinfo{person}{Livia Dutra}, \bibinfo{person}{Mairon Samagaio},
+  \bibinfo{person}{Maraim Elbadri}, \bibinfo{person}{Margot Mieskes},
+  \bibinfo{person}{Marissa Gerchick}, \bibinfo{person}{Martha Akinlolu},
+  \bibinfo{person}{Michael McKenna}, \bibinfo{person}{Mike Qiu},
+  \bibinfo{person}{Muhammed Ghauri}, \bibinfo{person}{Mykola Burynok},
+  \bibinfo{person}{Nafis Abrar}, \bibinfo{person}{Nazneen Rajani},
+  \bibinfo{person}{Nour Elkott}, \bibinfo{person}{Nour Fahmy},
+  \bibinfo{person}{Olanrewaju Samuel}, \bibinfo{person}{Ran An},
+  \bibinfo{person}{Rasmus Kromann}, \bibinfo{person}{Ryan Hao},
+  \bibinfo{person}{Samira Alizadeh}, \bibinfo{person}{Sarmad Shubber},
+  \bibinfo{person}{Silas Wang}, \bibinfo{person}{Sourav Roy},
+  \bibinfo{person}{Sylvain Viguier}, \bibinfo{person}{Thanh Le},
+  \bibinfo{person}{Tobi Oyebade}, \bibinfo{person}{Trieu Le},
+  \bibinfo{person}{Yoyo Yang}, \bibinfo{person}{Zach Nguyen},
+  \bibinfo{person}{Abhinav~Ramesh Kashyap}, \bibinfo{person}{Alfredo
+  Palasciano}, \bibinfo{person}{Alison Callahan}, \bibinfo{person}{Anima
+  Shukla}, \bibinfo{person}{Antonio Miranda-Escalada}, \bibinfo{person}{Ayush
+  Singh}, \bibinfo{person}{Benjamin Beilharz}, \bibinfo{person}{Bo Wang},
+  \bibinfo{person}{Caio Brito}, \bibinfo{person}{Chenxi Zhou},
+  \bibinfo{person}{Chirag Jain}, \bibinfo{person}{Chuxin Xu},
+  \bibinfo{person}{Clémentine Fourrier}, \bibinfo{person}{Daniel~León
+  Periñán}, \bibinfo{person}{Daniel Molano}, \bibinfo{person}{Dian Yu},
+  \bibinfo{person}{Enrique Manjavacas}, \bibinfo{person}{Fabio Barth},
+  \bibinfo{person}{Florian Fuhrimann}, \bibinfo{person}{Gabriel Altay},
+  \bibinfo{person}{Giyaseddin Bayrak}, \bibinfo{person}{Gully Burns},
+  \bibinfo{person}{Helena~U. Vrabec}, \bibinfo{person}{Imane Bello},
+  \bibinfo{person}{Ishani Dash}, \bibinfo{person}{Jihyun Kang},
+  \bibinfo{person}{John Giorgi}, \bibinfo{person}{Jonas Golde},
+  \bibinfo{person}{Jose~David Posada}, \bibinfo{person}{Karthik~Rangasai
+  Sivaraman}, \bibinfo{person}{Lokesh Bulchandani}, \bibinfo{person}{Lu Liu},
+  \bibinfo{person}{Luisa Shinzato}, \bibinfo{person}{Madeleine~Hahn de
+  Bykhovetz}, \bibinfo{person}{Maiko Takeuchi}, \bibinfo{person}{Marc Pàmies},
+  \bibinfo{person}{Maria~A Castillo}, \bibinfo{person}{Marianna Nezhurina},
+  \bibinfo{person}{Mario Sänger}, \bibinfo{person}{Matthias Samwald},
+  \bibinfo{person}{Michael Cullan}, \bibinfo{person}{Michael Weinberg},
+  \bibinfo{person}{Michiel~De Wolf}, \bibinfo{person}{Mina Mihaljcic},
+  \bibinfo{person}{Minna Liu}, \bibinfo{person}{Moritz Freidank},
+  \bibinfo{person}{Myungsun Kang}, \bibinfo{person}{Natasha Seelam},
+  \bibinfo{person}{Nathan Dahlberg}, \bibinfo{person}{Nicholas~Michio Broad},
+  \bibinfo{person}{Nikolaus Muellner}, \bibinfo{person}{Pascale Fung},
+  \bibinfo{person}{Patrick Haller}, \bibinfo{person}{Ramya Chandrasekhar},
+  \bibinfo{person}{Renata Eisenberg}, \bibinfo{person}{Robert Martin},
+  \bibinfo{person}{Rodrigo Canalli}, \bibinfo{person}{Rosaline Su},
+  \bibinfo{person}{Ruisi Su}, \bibinfo{person}{Samuel Cahyawijaya},
+  \bibinfo{person}{Samuele Garda}, \bibinfo{person}{Shlok~S Deshmukh},
+  \bibinfo{person}{Shubhanshu Mishra}, \bibinfo{person}{Sid Kiblawi},
+  \bibinfo{person}{Simon Ott}, \bibinfo{person}{Sinee Sang-aroonsiri},
+  \bibinfo{person}{Srishti Kumar}, \bibinfo{person}{Stefan Schweter},
+  \bibinfo{person}{Sushil Bharati}, \bibinfo{person}{Tanmay Laud},
+  \bibinfo{person}{Théo Gigant}, \bibinfo{person}{Tomoya Kainuma},
+  \bibinfo{person}{Wojciech Kusa}, \bibinfo{person}{Yanis Labrak},
+  \bibinfo{person}{Yash~Shailesh Bajaj}, \bibinfo{person}{Yash Venkatraman},
+  \bibinfo{person}{Yifan Xu}, \bibinfo{person}{Yingxin Xu}, \bibinfo{person}{Yu
+  Xu}, \bibinfo{person}{Zhe Tan}, \bibinfo{person}{Zhongli Xie},
+  \bibinfo{person}{Zifan Ye}, \bibinfo{person}{Mathilde Bras},
+  \bibinfo{person}{Younes Belkada}, {and} \bibinfo{person}{Thomas Wolf}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{BLOOM: A 176B-Parameter Open-Access Multilingual
+  Language Model}.
+\newblock
+\newblock
+\showeprint[arxiv]{2211.05100}~[cs.CL]
+
+
+\bibitem[Wu et~al\mbox{.}(2022)]%
+        {Wu2022}
+\bibfield{author}{\bibinfo{person}{Carole-Jean Wu}, \bibinfo{person}{Ramya
+  Raghavendra}, \bibinfo{person}{Udit Gupta}, \bibinfo{person}{Bilge Acun},
+  \bibinfo{person}{Newsha Ardalani}, \bibinfo{person}{Kiwan Maeng},
+  \bibinfo{person}{Gloria Chang}, \bibinfo{person}{Fiona Aga},
+  \bibinfo{person}{Jinshi Huang}, \bibinfo{person}{Charles Bai},
+  \bibinfo{person}{Michael Gschwind}, \bibinfo{person}{Anurag Gupta},
+  \bibinfo{person}{Myle Ott}, \bibinfo{person}{Anastasia Melnikov},
+  \bibinfo{person}{Salvatore Candido}, \bibinfo{person}{David Brooks},
+  \bibinfo{person}{Geeta Chauhan}, \bibinfo{person}{Benjamin Lee},
+  \bibinfo{person}{Hsien-Hsin Lee}, \bibinfo{person}{Bugra Akyildiz},
+  \bibinfo{person}{Maximilian Balandat}, \bibinfo{person}{Joe Spisak},
+  \bibinfo{person}{Ravi Jain}, \bibinfo{person}{Mike Rabbat}, {and}
+  \bibinfo{person}{Kim Hazelwood}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Sustainable AI: Environmental Implications,
+  Challenges and Opportunities}. In \bibinfo{booktitle}{\emph{Proceedings of
+  Machine Learning and Systems}},
+  \bibfield{editor}{\bibinfo{person}{D.~Marculescu}, \bibinfo{person}{Y.~Chi},
+  {and} \bibinfo{person}{C.~Wu}} (Eds.), Vol.~\bibinfo{volume}{4}.
+  \bibinfo{pages}{795--813}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.mlsys.org/paper_files/paper/2022/file/ed3d2c21991e3bef5e069713af9fa6ca-Paper.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Xia et~al\mbox{.}(2017)]%
+        {7738551}
+\bibfield{author}{\bibinfo{person}{Wenfeng Xia}, \bibinfo{person}{Peng Zhao},
+  \bibinfo{person}{Yonggang Wen}, {and} \bibinfo{person}{Haiyong Xie}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{A Survey on Data Center Networking (DCN):
+  Infrastructure and Operations}.
+\newblock \bibinfo{journal}{\emph{IEEE Communications Surveys & Tutorials}}
+  \bibinfo{volume}{19}, \bibinfo{number}{1} (\bibinfo{year}{2017}),
+  \bibinfo{pages}{640--656}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/COMST.2016.2626784}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2021)]%
+        {ZHANG2021102253}
+\bibfield{author}{\bibinfo{person}{Qingxia Zhang}, \bibinfo{person}{Zihao
+  Meng}, \bibinfo{person}{Xianwen Hong}, \bibinfo{person}{Yuhao Zhan},
+  \bibinfo{person}{Jia Liu}, \bibinfo{person}{Jiabao Dong},
+  \bibinfo{person}{Tian Bai}, \bibinfo{person}{Junyu Niu}, {and}
+  \bibinfo{person}{M.~Jamal Deen}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{A survey on data center cooling systems:
+  Technology, power consumption modeling and control strategy optimization}.
+\newblock \bibinfo{journal}{\emph{Journal of Systems Architecture}}
+  \bibinfo{volume}{119} (\bibinfo{year}{2021}), \bibinfo{pages}{102253}.
+\newblock
+\showISSN{1383-7621}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.sysarc.2021.102253}
+\showDOI{\tempurl}
+
+
+\bibitem[Zitnick et~al\mbox{.}(2020)]%
+        {zitnick2020}
+\bibfield{author}{\bibinfo{person}{C.~Lawrence Zitnick}, \bibinfo{person}{Lowik
+  Chanussot}, \bibinfo{person}{Abhishek Das}, \bibinfo{person}{Siddharth
+  Goyal}, \bibinfo{person}{Javier Heras-Domingo}, \bibinfo{person}{Caleb Ho},
+  \bibinfo{person}{Weihua Hu}, \bibinfo{person}{Thibaut Lavril},
+  \bibinfo{person}{Aini Palizhati}, \bibinfo{person}{Morgane Riviere},
+  \bibinfo{person}{Muhammed Shuaibi}, \bibinfo{person}{Anuroop Sriram},
+  \bibinfo{person}{Kevin Tran}, \bibinfo{person}{Brandon Wood},
+  \bibinfo{person}{Junwoong Yoon}, \bibinfo{person}{Devi Parikh}, {and}
+  \bibinfo{person}{Zachary Ulissi}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{An Introduction to Electrocatalyst Design using
+  Machine Learning for Renewable Energy Storage}.
+\newblock
+\newblock
+\showeprint[arxiv]{2010.09435}~[cond-mat.mtrl-sci]
+
+
+\end{thebibliography}

@@ -1,0 +1,102 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: acmtog-sample-bibfile.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no key, author in ghg-potoc
+Warning--no author, editor, organization, or key in ghg-potoc
+Warning--to sort, need author or key in ghg-potoc
+Warning--no key, author in ghg-guid
+Warning--no author, editor, organization, or key in ghg-guid
+Warning--to sort, need author or key in ghg-guid
+Warning--no key, author in lca
+Warning--no author, editor, organization, or key in lca
+Warning--to sort, need author or key in lca
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--no key, author in ghg-potoc
+Warning--no key, author in ghg-potoc
+Warning--no key, author in ghg-guid
+Warning--no key, author in lca
+Warning--no key, author in lca
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no key, author in ghg-potoc
+Warning--empty author in ghg-potoc
+Warning--no key, author in ghg-guid
+Warning--empty author in ghg-guid
+Warning--no key, author in lca
+Warning--empty author in lca
+Warning--empty publisher in 7738674
+Warning--empty address in 7738674
+Warning--empty address in dc_computer
+Warning--no number and no volume in devlin2018bert
+Warning--page numbers missing in both pages and numpages fields in devlin2018bert
+Warning--empty publisher in gandhi2022metrics
+Warning--empty address in gandhi2022metrics
+Warning--page numbers missing in both pages and numpages fields in gandhi2022metrics
+Warning--page numbers missing in both pages and numpages fields in Henderson2020Towards
+Warning--empty publisher in jiang2020power
+Warning--empty address in jiang2020power
+Warning--no number and no volume in jouppi2023tpu
+Warning--page numbers missing in both pages and numpages fields in jouppi2023tpu
+Warning--empty publisher in 9752582
+Warning--empty address in 9752582
+Warning--no number and no volume in lewis2019bart
+Warning--page numbers missing in both pages and numpages fields in lewis2019bart
+Warning--page numbers missing in both pages and numpages fields in DBLP:journals/corr/abs-1911-03310
+Warning--no number and no volume in liu2019roberta
+Warning--page numbers missing in both pages and numpages fields in liu2019roberta
+Warning--page numbers missing in both pages and numpages fields in mukherjee2020detailed
+Warning--page numbers missing in both pages and numpages fields in DBLP:journals/corr/abs-1910-01108
+Warning--page numbers missing in both pages and numpages fields in distillbert
+Warning--page numbers missing in both pages and numpages fields in Strubell-policy-19
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--empty publisher in Wu2022
+Warning--empty address in Wu2022
+You've used 51 entries,
+            5981 wiz_defined-function locations,
+            1921 strings with 41613 characters,
+and the built_in function-call counts, 82193 in all, are:
+= -- 8805
+> -- 6738
+< -- 0
++ -- 2466
+- -- 2471
+* -- 8786
+:= -- 10649
+add.period$ -- 252
+call.type$ -- 51
+change.case$ -- 1009
+chr.to.int$ -- 49
+cite$ -- 108
+duplicate$ -- 4401
+empty$ -- 3140
+format.name$ -- 2590
+if$ -- 17795
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 124
+newline$ -- 560
+num.names$ -- 337
+pop$ -- 2372
+preamble$ -- 1
+purify$ -- 1402
+quote$ -- 0
+skip$ -- 1593
+stack$ -- 0
+substring$ -- 3504
+swap$ -- 366
+text.length$ -- 76
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1184
+warning$ -- 46
+while$ -- 222
+width$ -- 0
+write$ -- 1091
+(There were 46 warnings)

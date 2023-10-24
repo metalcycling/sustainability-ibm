@@ -1,0 +1,203 @@
+\section{Towards Life Cycle Assessment of Models}
+\label{metrics}
+In working towards defining metrics for Sustainable AI, we made efforts to leverage and 
+extend existing sustainability metrics, rather than create a separate universe just for AI, which, we believe, will be 
+dis-advantageous for scientists and practitioners. 
+Our aim is to apply core sustainability concepts such as Product Life Cycle (LCA) (~\cite{}), 
+to AI models, taking into account the entire 'supply chain' (system and software), 
+that is associated with the construction and use of AI models. We show how this approach 
+can lead to promoting sustainability mind-set, as well as, tools for the investigation of various 
+trade-offs involved in the construction and maintenance of models. 
+\\
+In the area of Sustainable Computing, we leverage and extend the paper "Metrics for Sustainability in Data Centers" (~\cite{gandhi2022metrics}). 
+In this paper, Ghandhi {\it et. al.} defines several important metrics for data center sustainability. 
+In particular, the work establishes a metric to 
+quantify the carbon cost associated with a single compute job, 
+which could be anything that involves
+computation, including, a database transaction, a high performance simulation job, a model training job, 
+or an AI inference job. The operational cost, termed, Job Sustainability Cost (JSC) sums the energy 
+consumption of all systems participating in the job execution (converted to carbon), together with overheads stemming from cooling and power loss. The the amortized cost, termed, {\it Amortized Sustainability Cost (ASC)} adds to $JCS$ the embodied emission (life cycle) cost of systems used in the computation, i.e., the manufacturing carbon cost of the systems used (and includes other factors such as recycling cost).
+\\
+We believe that (1) the definition of sustainability metrics in the fine granularity of a job, and, (2) the inclusion of all overheads associate with the execution (such as, cooling and power loss), and with the life cycle, (such as 
+embodied emission of systems), is a step in the right direction towards meaningful and usable metrics. 
+However, we also believe that the definitions of JCS and ASC fall short in one key area: They 
+ignore overheads stemming from the context of an execution - i.e.,  the platform/service used for the execution
+of the job. 
+\\
+For example, Serverless jobs on AWS are executed in the context of a platform service called Lambda~\cite{}, and a container job in IBM Cloud, is executed in a context of a platform service termed IBM Kubernetes Service (IKS) ~\cite{}. These platforms are always on and they incur significant overheads, even if no job is running. For example, in IKS, there are $??$ servers used for managing the service in every location where the service is deployed. These management servers are always running, independently of the number of jobs executing. They are used
+to run management software to 
+register new clients, monitor the health of the systems, and to meter usage for billing purposes.
+In storage and data services, such as IBM's Cloud Object Storage (COS) (~\cite{}), processes wake up periodically, unprompted by any user initiated action, to perform, cleanup, re-placement, and tier management. Other shared services may be used across
+services (i.e., logging service),
+and the proportionate share of their use must be taken into account as well. The paper~\cite{eilam22}, 
+offers a methodology of how this can be done. 
+In addition, we ought to not forget about the cost of continuous deployment (CD), and testing of the platforms, which can also be significant.
+\\
+We posit that all jobs using a platform, must share the carbon cost of the platform they all use. We therefore propose an extension to the DC sustainability metrics defined in~\cite{gandhi2022metrics} that addresses this omission. Our contribution includes  
+a new metric that specifically targets the 'embodied' cost of software platforms. 
+We then use it, to propose
+an expanded definition of the job operational cost (JSC) and amortized cost (ASC) that factors in the cost of the platform used to serve jobs (Section~\ref{}).
+We believe that the revised and extended set of metrics can be used
+for a broader set of use cases, and 
+provide more accurate and complete results leading to insight that may result in efficiency 
+across the software stack and life cycle. Next, we show how to apply and specialize these 
+concepts towards metrics for sustainable AI. We demonstrate how the 
+approach can promote the insight necessary for a
+sustainability mind-set with AI practitioners (Section~\ref{}) when 
+investigating trade-offs across the life cycle of an AI model. 
+\\
+For completeness, we start with a short overview of the DC Sustainability 
+metrics defined in ~\cite{}. 
+\subsection{Overview of DC Sustainability Metric}
+\label{overview}
+In this section we give a brief overview of the relevant metrics defined in~\cite{gandhi2022metrics}. 
+The reader is referred to~\cite{gandhi2022metrics} for a complete description.
+All metrics defined employ the unit of “carbon dioxide equivalent” or CO2e, expressed in grams of CO2 (or gCO2e) (see,~\cite{}). 
+
+A key goal for the metrics design is the quantification of the end-to-end sustainability footprint in data centers at fine granularity. This is required in order to promote sustainability mind-set by software developers, 
+DevOps, and data center operators. The desired properties for the design include, accuracy, measurablity, computability, reproducaiblity, and usefulness. The paper proposes to focus on a single unit of work performed, defined as {\it a job}, and calculate its associated sustainability costs. 
+\\
+The \textbf{Job Sustainability Cost(JSC)} is aimed at capturing the carbon footprint associated with running a job. It is calculated as the sum of energy, converted to carbon footprint, used by all systems participating in running the job (splitting it, in case of resource sharing) and also adding to it a 'tax' for the cooling 
+and power loss associated with the data center equipment. Energy is converted to carbon based on the mix of 
+energy sources and their associated carbon (See e.g.,~\cite{}). For example, consider a job $j$ that consumes $1kJ$ energy executing on a host, and an additional 0.08kJ due to cooling and power distribution losses. If the energy source mix is $80\%$ coal and $20\%$ solar, then, using carbon-intensity values (and converting $kJ$ to $kWh$), we have $JSC(j) = 1.08 \times (0.8 \times 820 + 0.2 \times 48) \div 3600 \approx 0.2gCO2e$.  
+\\
+The \textbf{Amortized Sustainability Costs (ASC)} is aimed at further capturing the life cycle cost (embodied 
+emission, wear-and-tear, etc)
+of the systems (devices) used in the computation. It is calculated as the sum of $JSC$ and the job’s share (or tax) of the systems' embodied emission and other costs (such as wear-and-tear, and recycling cost) for all systems 
+participating in the computation. For the job $j$ from the example above, assume that it runs exclusively for $5$ minutes on a system $S$ with an expected lifetime of $3$ years, and the embodied cost of $S$ (including wear-and-tear impact and recycling potential) is $10,000$ $gCO2e$. Then the job $j$ will be taxed $ecft(j) = 10,000 \times \frac{5}{3\times 365 \times 24 \times 60} = 0.031$ And, $ASC(j) = JSC(j)  +  ecft(j) \approx 0.231gCO2e$. 
+\\
+The paper defines other useful metrics, such as {\bf Job Quality per Cost Rate (JQCR)} which we will not get into for space limitations. 
+%%
+\subsection{Proposed Extension}
+We strongly believe that DC sustainability metrics must ultimately focus on the cost of work executed, and that all overheads, to the extent possible, must be added in. 
+
+However, one overhead which is not accounted for in the definitions in Section~\ref{overview}, is that of an {\em execution context}, such as, a cloud platform/service. Most jobs today in cloud or on-premise environments, execute in a context of a continuously running shared platform. For example, a Serverless job on AWS executes in the context of a platform termed Lambda~\cite{}. A container in IBM Cloud, is executed in a context of a platform termed IBM Kubernetes Service (IKS) ~\cite{}. As described in the beginning of Section~\ref{metrics}, there are significant overheads associated 
+with the operations and life cycle of these platforms. 
+We posit that all jobs using a platform, must share the carbon cost of the platform they all use. 
+%
+%As a counter argument, one may claim that the approach above (using the metric JSC according
+%to its original definition) is general enough, as the platform management servers and the work they 
+%perform can be viewed as yet another job that can be quantified separately. 
+%We claim that considering jobs {\it in isolation} fail to capture the 'supply chain' aspects, as is 
+%a standard practice in other sustainability domains (aka, Scope~$3$ calculation~\cite{}). 
+%Also, not factoring in the operational overhead of the platform, violates the completeness principle, 
+%meaning that all energy must be accounted for and split across the users of a product/service~\cite{}. 
+%The work performed by the management servers is required to execute jobs, although it is not strictly a part
+%of any job execution, just like cooling and power loses. 
+\\
+We start with some preliminary definitions. We use the term {\it software product} (in short, {\it product}) to 
+denote any software asset, such as a software platform that is used as-a-services to support the execution of jobs; an AI model used for inference requests; data-sets which are prepared, and then used for the training of AI models, etc. Each software product is associated with a life cycle, including development, and use. 
+\\
+Next, we propose to expend the definition of $JSC$ to factor-in the platform's cost, in case a platform is used as an execution context. 
+To avoid confusion we denote the expanded definition as $JSC^e$. \\
+The \textbf{Expended Job Sustainability Cost} (denoted $JSC^e$) is calculated as the sum of energy (converted to carbon footprint) of all systems participating in the computation, 
+and a 'tax' for cooling and power loses, and a 'tax' for the platform overhead, if a platform is used as the execution context. For example, assume that the job $j$ is a container that
+runs in the context of a platform such as IBM's IKS~\cite{}. This platform, in a particular location such as Dallas, uses $3$ servers dedicated to management, and their carbon footprint is $50$ $gCO2e$ for every minute
+of operation. Lets assume that the job $j$ executes for $5$ minutes, and that while it is executing, there are concurrently $9$ other jobs, of roughly equal size, executing on IKS in Dallas. Then, our job is 'taxed' $\frac{50}{10} \times 5$ for its share of the platform overhead. This 
+number is added to $JSC(j)$ to derive $JSC^e(j)$. In addition, we need to add the cost of service maintenance. 
+Assume that there are $2$ people working in the Dallas location on maintenance and trouble shooting, and another $5$ are working to develop and test new $IKS$ features, that will be rolled in continuously. Assume that 
+the average carbon footprint of these individuals is $20gCO2e$ a day. Then we add $\frac{20\times 7}{24\times 60\times 10} \times 5$ to derive the final value of $JSC^e(j)$.
+\\
+Next, we define a new metric to capture the 'embodied' carbon of software products. \\ The {\bf The Embodied Product Cost (EPC)} is the upfront development cost of any given software product (up to the point of its deployment and use). It is calculated as the carbon footprint associated with all activities needed to create the product. These  may vary based on the type of software product. For a software platform delivered as a service it will include development and testing; for a data-set it includes data preparation and de-duplication; and,
+for an AI model it includes training. Each such activity consists of humans working on computing devices that consume energy from certain power grid, with a particular energy mix. (One can envision that in the future every 
+GitHub submission will include parameters that can be used to compute and track the carbon footprint for that activity.) We can for example refer to an activity of a developer, or, a tester, or a data-scientist, a day, as a job $j$.  This job is associated with the amortized carbon footprint cost $ASC(j)$. The Embodied Product Cost 
+$EPC$, is the summation over all $ASC(j)$ of all the jobs over the course of the creation of 
+the product (a period that can easily take a couple of years).  
+%%to-do: references for other academic work that quantified the software life cycle carbon footprint. 
+\\
+Lastly, we expand accordingly the definition of the Amortized Sustainability Cost ($ASC$) of jobs. 
+We claim that in addition to the embodied emission of systems participating in the execution of 
+a job, we also have to add the embodied emission of any software product that serves in the execution. Thus, \\ 
+the {\bf Expanded Amortized Sustainability Cost}, denoted, $ASC^e$, is calculated as the sum of 
+$JSC^e$, and, the job’s share (or tax) of the systems' embodied emission and life cycle costs (for all systems 
+participating in the computation), and the Embodied Product Cost (EPC) of the platform supporting the computation.
+As an example, if $j$ is a container running on IKS, in Dallas, runs for $5$ days concurrently 
+with $9$ other equally sized jobs, and lets us assume that the expected life time of 
+the IKS service in Dallas is $6$ years, then it is taxed $EPC(IKS) \times \frac{5}{10 \times 365 \times 6}$, which is added to $ASC(j)$ to derive $ASC^e(j)$. 
+\\
+With the introduction of a new metric $EPC$ to capture the embodied cost of software products, and 
+with the expanded definition of $JCS$ and $ASC$ we are now ready to turn our attention to the 
+unique and fascinating life cycle characteristics of AI. We show how we apply these three metric to meaningfully calculate the sustainability cost of AI inference jobs, and how this can be used to explore trade-offs, with a sustainability mind-set, throughout the life cycle of AI models. 
+The fact that we actually do not need to define any new metric, is an attestation for the generality 
+and usefulness of these concepts. 
+\\
+\subsection{metrics for Sustainable AI} 
+We now apply and specialize the concepts and definitions 
+defined above towards metrics for Sustainable AI. 
+\\
+There are two 'products' that are of key relevance for AI. 
+The first is data-sets. Data preparation for model training include activities such as testing for biases in the data, eliminating hate speech and profanities, and cleaning and eliminating duplication. According to ~\cite{}, $xx\%$ of the total energy used for developing a model, is spent on data preparation. 
+%%to-do: give some concrete numbers -- very important (Bhatta?)
+Once a data-set is 'ready', it can be used to train multiple different models. A data-set asset can also be  used in order to prepare other smaller, or more specific data-sets via activities such as processing and transformation.
+%%Bhatta - any other activities we should list in 
+%%going from D1 to D2 (data-sets)?
+\\
+The second 'product' that is relevant to AI is an AI model. A model is prepared (i.e., developed, or 'manufactured') by
+a process of experimentation, and training. These activities
+are performed by leveraging a data-set.  
+The experimentation may include searching for the best match Neural Network (NN) architecture, 
+as well as, Hyper Parameter tuning. The training is an iterative process that includes many iterations used to 
+converge on  an 'optimal' set of weights. A given model 
+can also be used to develop another, sometimes task-specific, model, in a process called {\em distillation} (e.g.,~\cite{}). 
+%%to-do add numbers of cost from Meta, Google = Bhatta ? 
+\\
+Once a model is 'ready' it is deployed, and used to serve inference jobs. 
+We can say that a model is {\em deployed} when it is available to be used to serve inference jobs. 
+We can refer to the life cycle phase when it is serving inference jobs as {\em the operational phase}. 
+\\
+In addition  to serving inference jobs, the model must be kept accurate in a dynamically changing world,
+thus, it is being continuously re-trained. The frequency of re-training, and the cost of it, varies across models and instances. 
+%to-do: add example numbers - Bhatta? 
+Lastly, a model can also be used to develop another model in a process called distillation (see, e.g., ~\cite{}).
+\\
+For a data-set $D$, we calculate the Embodied Product Cost $EPC(D)$ as the sum of carbon footprint of all activities involved in preparing the data-set. Including loading, prepossessing, de-duplication, hate and profanity elimination, and tokenization. If we refer to each such activity as a single job (or alternatively, break it according to data scientists preforming such activities), then $EPC(D) = \sum_j ASC(j)$. For example, 
+if a single data scientist prepared a data-set working for 10 days, on a ... [to-do:complete example].
+%to-do a concrete example of the computer used, GPUs etc, time, 
+%and energy consumption. 
+\\
+The definition above assumes that $D$ is prepared 'from scratch' without using an existing data-set. If an existing data-set $D1$ is used to generate a new data-set $D2$ then $EPC(D2) = cf(D2) + w \times EPC(D1) $, where $cf(D2)$ is the carbon footprint associated with preparation of $D2$ based on $D1$, i.e., $ASC(j)$, where $j$ is the job of preparing $D2$ based on $D1$, and $0 < w < 1$ is a tax weight, that reflects $D2$'s share in re-using $D1$, which is equal to $1$ if $D2$ is the only data-set prepared using $D1$, but, more generally, it is $\frac{1}{n}$ if there are $n$ data-sets (of roughly equal size) that used $D1$ in the process of their preparation. 
+Note that this definition promoted sustainability mind-set in that it encourages a data scientist to think whether it is better to use an existing data-set vs. start-from-scratch. 
+\\
+We do the same analysis for models. For a model $M$, $EPC(M)$ is calculated as the sum of the carbon footprint associated with the development ('manufacturing') of a model, recursively. Formally, 
+$EPC(M) = ASC(j) + w_1 \times EPC(M') + w_2 \times EPC(D)$, where, 
+$j$ is defined as the 'job' of preparing $M$ based on either another model $M'$ or a data-set 
+$D$ (job preformed potentially by multiple different data-scientists), and,  
+$w_1$ is a tax weight to factor-in the re-use of a different model $M'$. It is $0$ if there was no model that was re-used, or proportioned, based on its share of model re-use, as is done in the case of data, and finally, $w_2$ is the tax weight, if the model was created based on a data-set $D$. It is $0$ if there was no data-set that was used, or proportioned, based on its share of re-use.
+\\
+Factoring-in model re-use is in particularly important for foundation models.
+One of the key benefits of foundation models is that one can use
+the same large model, that took a tremendous amount of carbon to train, to create multiple different smaller models, used for 
+specific task, with little effort and cost. 
+There has been a tremendous amount of criticism about the cost of Foundation Models (e.g.,~\cite{}), focused on the cost of model development. However, one of the 
+most common responses of companies such as Google that are developing these models, is that we must factor in the use of these models at scale (~\cite{}). 
+To the best of our knowledge, this work is the first attempt to formally develop metrics that can be actually used 
+to analytically substantiate or refute this claim. 
+\\
+Finally, we are ready to focus our attentions on AI inference jobs. Here, the expansions we proposed to the definitions of a job's cost serve us well as you will see soon. 
+Recall that while a model is deployed and used, it is serving multiple inference jobs. In addition, there is a huge cost in maintaining the model accuracy through frequent re-training. A
+cost that is often overlooked (~\cite{}). 
+%%to-do give an example. 
+Similarly, to what we claimed about 
+cloud platforms, also here, the cost of maintaining the model, and in particular, re-training, must be shared across all inference jobs using the model. Let's assume that at time interval $T$, a model $M$ was used to serve $n$ inference jobs, of roughly equal size. Lets assume that the cost of re-training at time interval $T$ was $cf_{rt}$ (note, there may have been multiple re-training 'jobs' at time interval $T$, and $cf_{rt}$ is the sum of $JSC^e(j)$ for these re-training jobs). 
+Then, that cost of re-training, must be split equally (or in proportion to the size, for non-equal jobs), across all jobs executing at time interval $T$. I.e., $cf_{rt}/n$ is added.
+\\
+Re-training is not an
+activity that is visible to the end user, nor is it triggered 
+by any single inference requests. Nevertheless, its only purpose 
+is to support the serving of inference jobs. Thus, exactly as we do for cooling carbon overhead, and, as proposed in this paper, 
+for platform services, we must also do here, namely, add in the overhead for keeping the model accurate. Thus, for inference job $I$, using a model $M$, we now have, $JCA^e(I,M) =JCA(I,M) + w \times cf_{rt}(M)$, where $JCA(I,M)$ is, as expected, the carbon associated directly with compute resources for $I$, plus the cooling and power loss taxes, and $w$ is the weight of the re-training overhead tax, calculated as explained above. 
+\\
+Clearly, defining $JCA^e(I,M)$ by adding in the cost of model maintenance (i.e., re-training) will encourage data scientists to practice sustainability mind-set, examining cost of re-training, the needed frequency, the optimal Pareto frontier with respect to accuracy, and optimization strategies, such as re-training on a sub-set of data, and eliminating stale data.  
+
+Finally, lets now discuss how we calculate $ASC^e(I,M)$. Here, we leverage our Embodied Product Cost metric ($EPC(M)$), in order 
+to account for the carbon associated with  the construction of a model, as well as the embodied system cost. 
+Thus, $ASC^e(I,M)$ is calculated adding in both. For a model $M$, if the life time expectancy is $LT$, for example, $3$ years, and the execution time of an inference job is $t$, and there are $n$ parallel jobs executing at any given time, then $ASC^e(I,M) = ASC(I,M) + \frac{EPC(M) \times t}{LT(M)\times n}$, where $ASC(I,M)$ is defined as expected, adding to $JSC^e(I,M)$ the 
+embodied system emission tax, and related costs. 
+\\
+Again, this metric exemplifies the usefulness for fostering a sustainability mind-set. A data-scientist will be encouraged to 
+ask questions, such as 'what is the right allocation of energy to train a model based on the expected usage, and expected life time'. In some cases, 
+spending the extra effort in training and distillation, results in a model that is more efficient. However, if it is worth the cost of extra training, will depend on the expected use.
+
+
+
+

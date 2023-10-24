@@ -1,0 +1,1481 @@
+%%% ====================================================================
+%%%  BibTeX-file{
+%%%     author          = "Gerry Murray",
+%%%     version         = "1.2",
+%%%     date            = "2 April 2012",
+%%%     filename        = "acmtog-sample-bibfile.bib",
+%%%     address         = "ACM, NY",
+%%%     email           = "murray at hq.acm.org",
+%%%     codetable       = "ISO/ASCII",
+%%%     keywords        = "ACM Reference Format, bibliography, citation, references",
+%%%     supported       = "yes",
+%%%     docstring       = "This BibTeX database file contains 'bibdata' entries
+%%%                        that 'match' the examples provided in the Specifications Document
+%%%                        AND, also, 'legacy'-type bibs. It should assist authors in 
+%%%                        choosing the 'correct' at-bibtype and necessary bib-fields
+%%%                        so as to obtain the appropriate ACM Reference Format output. 
+%%%			   It also contains many 'Standard Abbreviations'. "
+%%%  }
+%%% ====================================================================
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+%Entries
+
+title =        "Interview with Bill Kinder: January 13, 2005",
+  journal = 	 "Comput. Entertain.",
+  articleno =     "4",
+  volume =       "3",
+  number = 	 "1",
+  month =  	 "Jan.-March",
+  doi = 	 "10.1145/1057270.1057278",
+  url = 	 "http://doi.acm.org/10.1145/1057270.1057278",
+  howpublished = "Video",
+  note =	 "",
+}
+
+@article{Rous08,
+  author =       "Bernard Rous",
+  year = 	 "2008",
+  title =        "The Enabling of Digital Libraries",
+  journal = 	 "Digital Libraries",
+  volume =       "12",
+  number = 	 "3",
+  month =  	 jul,
+  articleno = 	 "5",
+  doi = 	 "",
+  url = 	 "",
+  howpublished = "",
+  note =	 "To appear",
+}
+
+@article{384253,
+ author = {Werneck,, Renato and Setubal,, Jo\~{a}o and da Conceic\~{a}o,, Arlindo},
+ title = {(old) Finding minimum congestion spanning trees},
+ journal = {J. Exp. Algorithmics},
+ volume = {5},
+ year = {2000},
+ issn = {1084-6654},
+ pages = {11},
+ doi = {http://doi.acm.org/10.1145/351827.384253},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+
+@article{Werneck:2000:FMC:351827.384253,
+ author = {Werneck, Renato and Setubal, Jo\~{a}o and da Conceic\~{a}o, Arlindo},
+ title = {(new) Finding minimum congestion spanning trees},
+ journal = {J. Exp. Algorithmics},
+ volume = {5},
+ month = dec,
+ year = {2000},
+ issn = {1084-6654},
+ articleno = {11},
+ url = {http://portal.acm.org/citation.cfm?id=351827.384253},
+ doi = {10.1145/351827.384253},
+ acmid = {384253},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@article{1555162,
+ author = {Conti, Mauro and Di Pietro, Roberto and Mancini, Luigi V. and Mei, Alessandro},
+ title = {(old) Distributed data source verification in wireless sensor networks},
+ journal = {Inf. Fusion},
+ volume = {10},
+ number = {4},
+ year = {2009},
+ issn = {1566-2535},
+ pages = {342--353},
+ doi = {http://dx.doi.org/10.1016/j.inffus.2009.01.002},
+ publisher = {Elsevier Science Publishers B. V.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+ }
+
+@article{Conti:2009:DDS:1555009.1555162,
+ author = {Conti, Mauro and Di Pietro, Roberto and Mancini, Luigi V. and Mei, Alessandro},
+ title = {(new) Distributed data source verification in wireless sensor networks},
+ journal = {Inf. Fusion},
+ volume = {10},
+ number = {4},
+ month = oct,
+ year = {2009},
+ issn = {1566-2535},
+ pages = {342--353},
+ numpages = {12},
+ url = {http://portal.acm.org/citation.cfm?id=1555009.1555162},
+ doi = {10.1016/j.inffus.2009.01.002},
+ acmid = {1555162},
+ publisher = {Elsevier Science Publishers B. V.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+ keywords = {Clone detection, Distributed protocol, Securing data fusion, Wireless sensor networks},
+}
+
+@inproceedings{Li:2008:PUC:1358628.1358946,
+ author = {Li, Cheng-Lun and Buyuktur, Ayse G. and Hutchful, David K. and Sant, Natasha B. and Nainwal, Satyendra K.},
+ title = {Portalis: using competitive online interactions to support aid initiatives for the homeless},
+ booktitle = {CHI '08 extended abstracts on Human factors in computing systems},
+ year = {2008},
+ isbn = {978-1-60558-012-X},
+ location = {Florence, Italy},
+ pages = {3873--3878},
+ numpages = {6},
+ url = {http://portal.acm.org/citation.cfm?id=1358628.1358946},
+ doi = {10.1145/1358628.1358946},
+ acmid = {1358946},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {cscw, distributed knowledge acquisition, incentive design, online games, recommender systems, reputation systems, user studies, virtual community},
+}
+
+@book{Hollis:1999:VBD:519964,
+ author = {Hollis, Billy S.},
+ title = {Visual Basic 6: Design, Specification, and Objects with Other},
+ year = {1999},
+ isbn = {0130850845},
+ edition = {1st},
+ publisher = {Prentice Hall PTR},
+ address = {Upper Saddle River, NJ, USA},
+ }
+
+
+@book{Goossens:1999:LWC:553897,
+ author = {Goossens, Michel and Rahtz, S. P. and Moore, Ross and Sutor, Robert S.},
+ title = {The  Latex Web Companion: Integrating TEX, HTML, and XML},
+ year = {1999},
+ isbn = {0201433117},
+ edition = {1st},
+ publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+ address = {Boston, MA, USA},
+ }
+
+% techreport
+@techreport{897367,
+ author = {Buss, Jonathan F. and Rosenberg, Arnold L. and Knott, Judson D.},
+ title = {Vertex Types in Book-Embeddings},
+ year = {1987},
+ source = {http://www.ncstrl.org:8900/ncstrl/servlet/search?formname=detail\&id=oai%3Ancstrlh%3Aumass_cs%3Ancstrl.umassa_cs%2F%2FUM-CS-1987-018},
+ publisher = {University of Massachusetts},
+ address = {Amherst, MA, USA},
+ }
+
+@techreport{Buss:1987:VTB:897367,
+ author = {Buss, Jonathan F. and Rosenberg, Arnold L. and Knott, Judson D.},
+ title = {Vertex Types in Book-Embeddings},
+ year = {1987},
+ source = {http://www.ncstrl.org:8900/ncstrl/servlet/search?formname=detail\&id=oai%3Ancstrlh%3Aumass_cs%3Ancstrl.umassa_cs%2F%2FUM-CS-1987-018},
+ publisher = {University of Massachusetts},
+ address = {Amherst, MA, USA},
+ }
+
+% whole proceedings
+
+@proceedings{Czerwinski:2008:1358628,
+ author = {},
+ note = {General Chair-Czerwinski, Mary and General Chair-Lund, Arnie and Program Chair-Tan, Desney},
+ title = {CHI '08: CHI '08 extended abstracts on Human factors in computing systems},
+ year = {2008},
+ isbn = {978-1-60558-012-X},
+ location = {Florence, Italy},
+ order_no = {608085},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+% phdthesis
+
+@phdthesis{Clarkson:1985:ACP:911891,
+ author = {Clarkson, Kenneth Lee},
+ advisor = {Yao, Andrew C.},
+ title = {Algorithms for Closest-Point Problems (Computational Geometry)},
+ year = {1985},
+ note = {AAT 8506171},
+ school = {Stanford University},
+ address = {Stanford, CA, USA},
+ }
+
+% A bibliography
+@Article{1984:1040142,
+ key = {{$\!\!$}},
+ journal = {SIGCOMM Comput. Commun. Rev.},
+ year = {1984},
+ issn = {0146-4833},
+ volume = {13-14},
+ number = {5-1},
+ issue_date = {January/April 1984},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+
+% grinder
+@inproceedings{2004:ITE:1009386.1010128,
+ title = {IEEE TCSC Executive Committee},
+ booktitle = {Proceedings of the IEEE International Conference on Web Services},
+ series = {ICWS '04},
+ year = {2004},
+ isbn = {0-7695-2167-3},
+ pages = {.21--},
+ url = {http://dx.doi.org/10.1109/ICWS.2004.64},
+ doi = {http://dx.doi.org/10.1109/ICWS.2004.64},
+ acmid = {1010128},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+key = {{$\!\!$}} ,
+}
+
+% div book
+@book{Mullender:1993:DS(:302430,
+ editor = {Mullender, Sape},
+ title = {Distributed systems (2nd Ed.)},
+ year = {1993},
+ isbn = {0-201-62427-3},
+ publisher = {ACM Press/Addison-Wesley Publishing Co.},
+ address = {New York, NY, USA},
+ }
+
+% master thesis (as techreport and thesis)
+
+@techreport{Petrie:1986:NAD:899644,
+ author = {Petrie, Charles J.},
+ title = {New Algorithms for Dependency-Directed Backtracking (Master's thesis)},
+ year = {1986},
+ source = {http://www.ncstrl.org:8900/ncstrl/servlet/search?formname=detail\&id=oai%3Ancstrlh%3Autexas_cs%3AUTEXAS_CS%2F%2FAI86-33},
+ publisher = {University of Texas at Austin},
+ address = {Austin, TX, USA},
+ }
+
+@MASTERSTHESIS{Petrie:1986:NAD:12345,
+ author = {Petrie, Charles J.},
+ title = {New Algorithms for Dependency-Directed Backtracking (Master's thesis)},
+ year = {1986},
+ source = {http://www.ncstrl.org:8900/ncstrl/servlet/search?formname=detail\&id=oai%3Ancstrlh%3Autexas_cs%3AUTEXAS_CS%2F%2FAI86-33},
+ school = {University of Texas at Austin},
+ address = {Austin, TX, USA},
+ }
+
+
+@BOOK{book-minimal,
+   author = "Donald E. Knuth",
+   title = "Seminumerical Algorithms",
+   publisher = "Addison-Wesley",
+   year = "1981",
+}
+
+% incollection (has an editor, title, and possibly a booktitle)
+@INcollection{KA:2001,
+ author = {Kong, Wei-Chang},
+ Title = {The implementation of electronic commerce in SMEs in Singapore (as Incoll)},
+ booktitle = {E-commerce and cultural values},
+ year = {2001},
+ isbn = {1-59140-056-2},
+ pages = {51--74},
+ numpages = {24},
+ url = {http://portal.acm.org/citation.cfm?id=887006.887010},
+ acmid = {887010},
+ publisher = {IGI Publishing},
+ address = {Hershey, PA, USA},
+}
+
+
+% with bibfield 'type' before chapter (note no editor)
+@INBOOK{KAGM:2001,
+ author = {Kong, Wei-Chang},
+ type = {Name of Chapter:},
+ chapter = {The implementation of electronic commerce in SMEs in Singapore (Inbook-w-chap-w-type)},
+ title = {E-commerce and cultural values},
+ year = {2001},
+ isbn = {1-59140-056-2},
+ pages = {51--74},
+ numpages = {24},
+ url = {http://portal.acm.org/citation.cfm?id=887006.887010},
+ acmid = {887010},
+ publisher = {IGI Publishing},
+ address = {Hershey, PA, USA},
+}
+
+@misc{google,
+  author        = "{Google Inc.}",
+  title         = "Google\textsuperscript{\texttrademark} {I}mage {S}earch",
+  howpublished  = "",
+  month         = "",
+  year          = "current-year",
+  note          = "http://images.google.com/"
+}
+
+@inproceedings{Qiao2021,
+	author = {Aurick Qiao and Sang Keun Choe and Suhas Jayaram Subramanya and Willie Neiswanger and Qirong Ho and Hao Zhang and Gregory R. Ganger and Eric P. Xing},
+	booktitle = {15th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 21)},
+	date-added = {2023-04-28 12:44:29 -0400},
+	date-modified = {2023-04-28 12:44:29 -0400},
+	isbn = {978-1-939133-22-9},
+	month = jul,
+	pages = {1--18},
+	publisher = {{USENIX} Association},
+	title = {Pollux: Co-adaptive Cluster Scheduling for Goodput-Optimized Deep Learning},
+	url = {https://www.usenix.org/conference/osdi21/presentation/qiao},
+	year = {2021},
+	bdsk-url-1 = {https://www.usenix.org/conference/osdi21/presentation/qiao}
+}
+
+@article{Souza2022,
+	author = {Souza, Abel and Bashir, Noman and Murillo, Jorge and Hanafy, Walid and Liang, Qianlin and Irwin, David and Shenoy, Prashant},
+	date-added = {2023-04-28 12:42:27 -0400},
+	date-modified = {2023-04-28 12:42:27 -0400},
+	journal = {arXiv preprint arXiv:2210.04951},
+	title = {Ecovisor: A Virtual Energy System for Carbon-Efficient Applications},
+	year = {2022}
+}
+
+@inproceedings{Townend2019,
+	author = {P. {Townend} and S. {Clement} and D. {Burdett} and R. {Yang} and J. {Shaw} and B. {Slater} and J. {Xu}},
+	booktitle = {2019 IEEE International Conference on Service-Oriented System Engineering (SOSE)},
+	date-added = {2023-04-28 12:42:27 -0400},
+	date-modified = {2023-04-28 12:42:27 -0400},
+	pages = {156-15610},
+	title = {Invited Paper: Improving Data Center Efficiency Through Holistic Scheduling In Kubernetes},
+	year = {2019}
+}
+
+@inproceedings{Frey2022,
+	author = {Frey, Nathan C and Zhao, Dan and Axelrod, Simon and Jones, Michael and Bestor, David and Gadepally, Vijay and G{\'o}mez-Bombarelli, Rafael and Samsi, Siddharth},
+	booktitle = {2022 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)},
+	date-added = {2023-04-28 12:40:06 -0400},
+	date-modified = {2023-04-28 12:40:06 -0400},
+	organization = {IEEE},
+	pages = {732--741},
+	title = {Energy-aware neural architecture selection and hyperparameter optimization},
+	year = {2022}
+}
+
+@article{Patterson2022,
+	author = {Patterson, David and Gonzalez, Joseph and H{\"o}lzle, Urs and Le, Quoc and Liang, Chen and Munguia, Lluis-Miquel and Rothchild, Daniel and So, David R. and Texier, Maud and Dean, Jeff},
+	date-added = {2023-04-28 12:40:06 -0400},
+	date-modified = {2023-04-28 12:40:06 -0400},
+	doi = {10.1109/MC.2022.3148714},
+	journal = {Computer},
+	number = {7},
+	pages = {18-28},
+	title = {The Carbon Footprint of Machine Learning Training Will Plateau, Then Shrink},
+	volume = {55},
+	year = {2022},
+	bdsk-url-1 = {https://doi.org/10.1109/MC.2022.3148714}
+}
+
+@inproceedings{Wu2022,
+	author = {Wu, Carole-Jean and Raghavendra, Ramya and Gupta, Udit and Acun, Bilge and Ardalani, Newsha and Maeng, Kiwan and Chang, Gloria and Aga, Fiona and Huang, Jinshi and Bai, Charles and Gschwind, Michael and Gupta, Anurag and Ott, Myle and Melnikov, Anastasia and Candido, Salvatore and Brooks, David and Chauhan, Geeta and Lee, Benjamin and Lee, Hsien-Hsin and Akyildiz, Bugra and Balandat, Maximilian and Spisak, Joe and Jain, Ravi and Rabbat, Mike and Hazelwood, Kim},
+	booktitle = {Proceedings of Machine Learning and Systems},
+	date-added = {2023-04-28 12:40:06 -0400},
+	date-modified = {2023-04-28 12:40:06 -0400},
+	editor = {D. Marculescu and Y. Chi and C. Wu},
+	pages = {795--813},
+	title = {Sustainable AI: Environmental Implications, Challenges and Opportunities},
+	url = {https://proceedings.mlsys.org/paper_files/paper/2022/file/ed3d2c21991e3bef5e069713af9fa6ca-Paper.pdf},
+	volume = {4},
+	year = {2022},
+	bdsk-url-1 = {https://proceedings.mlsys.org/paper_files/paper/2022/file/ed3d2c21991e3bef5e069713af9fa6ca-Paper.pdf}
+}
+
+@inproceedings{Li2016,
+	author = {Li, Da and Chen, Xinbo and Becchi, Michela and Zong, Ziliang},
+	booktitle = {2016 IEEE International Conferences on Big Data and Cloud Computing (BDCloud), Social Computing and Networking (SocialCom), Sustainable Computing and Communications (SustainCom) (BDCloud-SocialCom-SustainCom)},
+	date-added = {2023-04-28 12:40:06 -0400},
+	date-modified = {2023-04-28 12:40:06 -0400},
+	doi = {10.1109/BDCloud-SocialCom-SustainCom.2016.76},
+	pages = {477-484},
+	title = {Evaluating the Energy Efficiency of Deep Convolutional Neural Networks on CPUs and GPUs},
+	year = {2016},
+	bdsk-url-1 = {https://doi.org/10.1109/BDCloud-SocialCom-SustainCom.2016.76}
+}
+
+@inproceedings{Acun2023,
+	abstract = {Technology companies reduce their datacenters' carbon footprint by investing in renewable energy generation and receiving credits from power purchase agreements. Annually, datacenters offset their energy consumption with generation credits (Net Zero). But hourly, datacenters often consume carbon-intensive energy from the grid when carbon-free energy is scarce. Relying on intermittent renewable energy in every hour (24/7) requires a mix of renewable energy from complementary sources, energy storage, and workload scheduling. In this paper, we present the Carbon Explorer framework to analyze the solution space. We use Carbon Explorer to balance trade-offs between operational and embodied carbon, optimizing the mix of solutions for 24/7 carbon-free datacenter operation based on geographic location and workload. Carbon Explorer has been open-sourced at https://github.com/facebookresearch/CarbonExplorer.},
+	address = {New York, NY, USA},
+	author = {Acun, Bilge and Lee, Benjamin and Kazhamiaka, Fiodar and Maeng, Kiwan and Gupta, Udit and Chakkaravarthy, Manoj and Brooks, David and Wu, Carole-Jean},
+	booktitle = {Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+	date-added = {2023-04-28 12:38:31 -0400},
+	date-modified = {2023-04-28 12:38:31 -0400},
+	doi = {10.1145/3575693.3575754},
+	isbn = {9781450399166},
+	location = {Vancouver, BC, Canada},
+	numpages = {15},
+	pages = {118--132},
+	publisher = {Association for Computing Machinery},
+	series = {ASPLOS 2023},
+	title = {Carbon Explorer: A Holistic Framework for Designing Carbon Aware Datacenters},
+	url = {https://doi.org/10.1145/3575693.3575754},
+	year = {2023},
+	bdsk-url-1 = {https://doi.org/10.1145/3575693.3575754}
+}
+
+@article{Chien2022,
+	author = {Chien, Andrew A and Zhang, Chaojie and Lin, Liuzixuan and Rao, Varsha},
+	date-added = {2023-04-28 12:38:31 -0400},
+	date-modified = {2023-04-28 12:38:31 -0400},
+	title = {Beyond PUE: Flexible Datacenters Empowering the Cloud to Decarbonize}
+}
+
+@inproceedings{Tracey2020,
+	abstract = {Rapid growth of the world-wide Information Technology (IT) infrastructure fueled by demands of the global Digital Economy and associated demands for electrical power creates significant impact on the environment. Over the past decade power usage effectiveness (PUE) was the major focus for improving energy efficiency of Data Centres in particular. While PUE did result in significant energy efficiency improvements, it is not sufficient by itself. Huge energy efficiency gains are expected from optimizing hardware utilization, cooling and software stacks. We present an AI-Driven Holistic Approach to energy and power management in data centres, which can be described as Energy Aware Scheduling (EAS). EAS uses AI-driven workloads aware software-hardware co-design to optimize energy efficiency of a data centre.},
+	address = {Cham},
+	author = {Tracey, Robert and Hoang, Lan and Subelet, Felix and Elisseev, Vadim},
+	booktitle = {High Performance Computing},
+	date-added = {2023-04-28 12:38:31 -0400},
+	date-modified = {2023-04-28 12:38:31 -0400},
+	editor = {Jagode, Heike and Anzt, Hartwig and Juckeland, Guido and Ltaief, Hatem},
+	isbn = {978-3-030-59851-8},
+	pages = {267--279},
+	publisher = {Springer International Publishing},
+	title = {AI-Driven Holistic Approach to Energy Efficient HPC},
+	year = {2020}
+}
+
+@inproceedings{Chi2020,
+	author = {Chi, Ce and Ji, Kaixuan and Marahatta, Avinab and Song, Penglei and Zhang, Fa and Liu, Zhiyong},
+	booktitle = {Proceedings of the Eleventh ACM International Conference on Future Energy Systems},
+	date-added = {2023-04-28 12:38:02 -0400},
+	date-modified = {2023-04-28 12:38:02 -0400},
+	pages = {489--495},
+	title = {Jointly Optimizing the IT and Cooling Systems for Data Center Energy Efficiency based on Multi-Agent Deep Reinforcement Learning},
+	year = {2020}
+}
+
+@article{Li2020,
+	author = {Y. {Li} and Y. {Wen} and D. {Tao} and K. {Guan}},
+	date-added = {2023-04-28 12:38:02 -0400},
+	date-modified = {2023-04-28 12:38:02 -0400},
+	journal = {IEEE Transactions on Cybernetics},
+	number = {5},
+	pages = {2002-2013},
+	title = {Transforming Cooling Optimization for Green Data Center via Deep Reinforcement Learning},
+	volume = {50},
+	year = {2020}
+}
+
+@inproceedings{Linder2019,
+	author = {Linder, Stephen Paul and Van Gilder, Jim and Zhang, Yan and Barrett, Enda},
+	booktitle = {International Electronic Packaging Technical Conference and Exhibition},
+	date-added = {2023-04-28 12:38:02 -0400},
+	date-modified = {2023-04-28 12:38:02 -0400},
+	organization = {American Society of Mechanical Engineers},
+	pages = {V001T02A001},
+	title = {Dynamic Control of Airflow Balance in Data Centers},
+	volume = {59322},
+	year = {2019}
+}
+
+@inproceedings{Tian2020,
+	address = {New York, NY, USA},
+	author = {Tian, Min and Vishwanath, Arun and Venkataramani, Guru and Subramaniam, Suresh},
+	booktitle = {Proceedings of the Eleventh ACM International Conference on Future Energy Systems},
+	date-added = {2023-04-28 12:37:16 -0400},
+	date-modified = {2023-04-28 12:37:16 -0400},
+	doi = {10.1145/3396851.3402655},
+	isbn = {9781450380096},
+	location = {Virtual Event, Australia},
+	numpages = {8},
+	pages = {474--481},
+	publisher = {Association for Computing Machinery},
+	series = {e-Energy '20},
+	title = {SpinSmart: Exploring Optimal Server Fan Speeds to Improve Overall System Energy Consumption},
+	url = {https://doi.org/10.1145/3396851.3402655},
+	year = {2020},
+	bdsk-url-1 = {https://doi.org/10.1145/3396851.3402655}
+}
+
+@article{Ilager2019,
+	author = {Ilager, Shashikant and Ramamohanarao, Kotagiri and Buyya, Rajkumar},
+	date-added = {2023-04-28 12:37:16 -0400},
+	date-modified = {2023-04-28 12:37:16 -0400},
+	journal = {Concurrency and Computation: Practice and Experience},
+	number = {17},
+	pages = {e5221},
+	publisher = {Wiley Online Library},
+	title = {ETAS: Energy and thermal-aware dynamic virtual machine consolidation in cloud data center with proactive hotspot mitigation},
+	volume = {31},
+	year = {2019}
+}
+
+@inproceedings{Acun2017,
+	author = {Acun, Bilge and Lee, Eun Kyung and Park, Yoonho and Kale, Laxmikant V.},
+	booktitle = {2017 IEEE 24th International Conference on High Performance Computing (HiPC)},
+	date-added = {2023-04-28 12:37:16 -0400},
+	date-modified = {2023-04-28 12:37:16 -0400},
+	doi = {10.1109/HiPC.2017.00020},
+	pages = {94-103},
+	title = {Support for Power Efficient Proactive Cooling Mechanisms},
+	year = {2017},
+	bdsk-url-1 = {https://doi.org/10.1109/HiPC.2017.00020}
+}
+	
+@inproceedings{gandhi2022metrics,
+  title={Metrics for Sustainability in Data Centers},
+  author={Gandhi, Anshul and Ghose, Kanad and Gopalan, Kartik and Hussain, Syed Rafiul and Lee, Dongyoon and Liu, David and Liu, Zhenhua and McDaniel, Patrick and Mu, Shuai and Zadok10, Erez},
+  booktitle={Proceedings of the 1st Workshop on Sustainable Computer Systems Design and Implementation (HotCarbon'22)},
+  year={2022}
+}
+
+@inproceedings{Maji2022,
+	abstract = {The ever-increasing demand for energy is resulting in considerable carbon emissions from the electricity grid. In recent years, there has been growing attention on demand-side optimizations to reduce carbon emissions from electricity usage. A vital component of these optimizations is short-term forecasting of the carbon intensity of the grid-supplied electricity. Many recent forecasting techniques focus on day-ahead forecasts, but obtaining such forecasts for longer periods, such as multiple days, while useful, has not gotten much attention. In this paper, we present CarbonCast, a machine-learning-based hierarchical approach that provides multi-day forecasts of the grid's carbon intensity. CarbonCast uses neural networks to first generate production forecasts for all the electricity-generating sources. It then uses a hybrid CNN-LSTM approach to combine these first-tier forecasts with historical carbon intensity data and weather forecasts to generate a carbon intensity forecast for up to four days. Our results show that such a hierarchical design improves the robustness of the predictions against the uncertainty associated with a longer multi-day forecasting period. We also analyze which factors most influence the carbon intensity forecasts of any region with a specific mixture of electricity-generating sources. We show that CarbonCast's 4-day forecasts have a MAPE of 4.80--13.93% across six geographically distributed regions while outperforming state-of-the-art methods. Importantly, CarbonCast is the first open-sourced tool for multi-day carbon intensity forecasts where the code and data are freely available to the research community.},
+	address = {New York, NY, USA},
+	author = {Maji, Diptyaroop and Shenoy, Prashant and Sitaraman, Ramesh K.},
+	booktitle = {Proceedings of the 9th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation},
+	date-added = {2023-04-28 12:35:37 -0400},
+	date-modified = {2023-04-28 12:35:37 -0400},
+	doi = {10.1145/3563357.3564079},
+	isbn = {9781450398909},
+	location = {Boston, Massachusetts},
+	numpages = {10},
+	pages = {198--207},
+	publisher = {Association for Computing Machinery},
+	series = {BuildSys '22},
+	title = {CarbonCast: Multi-Day Forecasting of Grid Carbon Intensity},
+	url = {https://doi.org/10.1145/3563357.3564079},
+	year = {2022},
+	bdsk-url-1 = {https://doi.org/10.1145/3563357.3564079}
+}
+
+@article{DBLP:journals/corr/abs-1908-10063,
+  author       = {Dogu Araci},
+  title        = {FinBERT: Financial Sentiment Analysis with Pre-trained Language Models},
+  journal      = {CoRR},
+  volume       = {abs/1908.10063},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1908.10063},
+  eprinttype    = {arXiv},
+  eprint       = {1908.10063},
+  timestamp    = {Thu, 29 Aug 2019 16:32:34 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1908-10063.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+%%BERT
+@article{DBLP:journals/corr/abs-2002-08155,
+  author       = {Zhangyin Feng and
+                  Daya Guo and
+                  Duyu Tang and
+                  Nan Duan and
+                  Xiaocheng Feng and
+                  Ming Gong and
+                  Linjun Shou and
+                  Bing Qin and
+                  Ting Liu and
+                  Daxin Jiang and
+                  Ming Zhou},
+  title        = {CodeBERT: {A} Pre-Trained Model for Programming and Natural Languages},
+  journal      = {CoRR},
+  volume       = {abs/2002.08155},
+  year         = {2020},
+  url          = {https://arxiv.org/abs/2002.08155},
+  eprinttype    = {arXiv},
+  eprint       = {2002.08155},
+  timestamp    = {Thu, 18 Jun 2020 10:52:55 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2002-08155.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+%%CodeBERT
+@article{DBLP:journals/corr/abs-2002-08155,
+  author       = {Zhangyin Feng and
+                  Daya Guo and
+                  Duyu Tang and
+                  Nan Duan and
+                  Xiaocheng Feng and
+                  Ming Gong and
+                  Linjun Shou and
+                  Bing Qin and
+                  Ting Liu and
+                  Daxin Jiang and
+                  Ming Zhou},
+  title        = {CodeBERT: {A} Pre-Trained Model for Programming and Natural Languages},
+  journal      = {CoRR},
+  volume       = {abs/2002.08155},
+  year         = {2020},
+  url          = {https://arxiv.org/abs/2002.08155},
+  eprinttype    = {arXiv},
+  eprint       = {2002.08155},
+  timestamp    = {Thu, 18 Jun 2020 10:52:55 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2002-08155.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+%%DistillBERT
+@article{distillbert,
+  author       = {Victor Sanh and
+                  Lysandre Debut and
+                  Julien Chaumond and
+                  Thomas Wolf},
+  title        = {DistilBERT, a distilled version of {BERT:} smaller, faster, cheaper
+                  and lighter},
+  journal      = {CoRR},
+  volume       = {abs/1910.01108},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1910.01108},
+  eprinttype    = {arXiv},
+  eprint       = {1910.01108},
+  timestamp    = {Tue, 02 Jun 2020 12:48:59 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1910-01108.bib},
+}
+
+%%DistilMBERT
+@article{DBLP:journals/corr/abs-1910-01108,
+  author       = {Victor Sanh and
+                  Lysandre Debut and
+                  Julien Chaumond and
+                  Thomas Wolf},
+  title        = {DistilBERT, a distilled version of {BERT:} smaller, faster, cheaper
+                  and lighter},
+  journal      = {CoRR},
+  volume       = {abs/1910.01108},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1910.01108},
+  eprinttype    = {arXiv},
+  eprint       = {1910.01108},
+  timestamp    = {Tue, 02 Jun 2020 12:48:59 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1910-01108.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+%%mBERT
+@article{DBLP:journals/corr/abs-1911-03310,
+  author       = {Jindrich Libovick{\'{y}} and
+                  Rudolf Rosa and
+                  Alexander Fraser},
+  title        = {How Language-Neutral is Multilingual BERT?},
+  journal      = {CoRR},
+  volume       = {abs/1911.03310},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1911.03310},
+  eprinttype    = {arXiv},
+  eprint       = {1911.03310},
+  timestamp    = {Sat, 23 Jan 2021 01:11:10 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1911-03310.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+%%RoBERTa
+@article{DBLP:journals/corr/abs-1911-02116,
+  author       = {Alexis Conneau and
+                  Kartikay Khandelwal and
+                  Naman Goyal and
+                  Vishrav Chaudhary and
+                  Guillaume Wenzek and
+                  Francisco Guzm{\'{a}}n and
+                  Edouard Grave and
+                  Myle Ott and
+                  Luke Zettlemoyer and
+                  Veselin Stoyanov},
+  title        = {Unsupervised Cross-lingual Representation Learning at Scale},
+  journal      = {CoRR},
+  volume       = {abs/1911.02116},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1911.02116},
+  eprinttype    = {arXiv},
+  eprint       = {1911.02116},
+  timestamp    = {Mon, 11 Nov 2019 18:38:09 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1911-02116.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+%%transfer-learning 
+    @article{thrun1998lifelong,
+  title={Lifelong Learning Algorithms.},
+  author={Thrun, Sebastian},
+  journal={Learning to learn},
+  volume={8},
+  pages={181--209},
+  year={1998}
+}
+
+%%transformer
+@article{vaswani2017attention,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  journal={Advances in neural information processing systems},
+  volume={30},
+  year={2017}
+}
+
+%%bert
+@article{devlin2018bert,
+  title={Bert: Pre-training of deep bidirectional transformers for language understanding},
+  author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  journal={arXiv preprint arXiv:1810.04805},
+  year={2018}
+}
+
+%%GPT-2
+@article{radford2019language,
+  title={Language models are unsupervised multitask learners},
+  author={Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya and others},
+  journal={OpenAI blog},
+  volume={1},
+  number={8},
+  pages={9},
+  year={2019}
+}
+
+%%Roberta
+@article{liu2019roberta,
+  title={Roberta: A robustly optimized bert pretraining approach},
+  author={Liu, Yinhan and Ott, Myle and Goyal, Naman and Du, Jingfei and Joshi, Mandar and Chen, Danqi and Levy, Omer and Lewis, Mike and Zettlemoyer, Luke and Stoyanov, Veselin},
+  journal={arXiv preprint arXiv:1907.11692},
+  year={2019}
+}
+
+%%T5
+@article{raffel2020exploring,
+  title={Exploring the limits of transfer learning with a unified text-to-text transformer},
+  author={Raffel, Colin and Shazeer, Noam and Roberts, Adam and Lee, Katherine and Narang, Sharan and Matena, Michael and Zhou, Yanqi and Li, Wei and Liu, Peter J},
+  journal={The Journal of Machine Learning Research},
+  volume={21},
+  number={1},
+  pages={5485--5551},
+  year={2020},
+  publisher={JMLRORG}
+}
+
+%%BART
+@article{lewis2019bart,
+  title={Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension},
+  author={Lewis, Mike and Liu, Yinhan and Goyal, Naman and Ghazvininejad, Marjan and Mohamed, Abdelrahman and Levy, Omer and Stoyanov, Ves and Zettlemoyer, Luke},
+  journal={arXiv preprint arXiv:1910.13461},
+  year={2019}
+}
+%%GPT-3
+@article{brown2020language,
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={1877--1901},
+  year={2020}
+}
+%health-applications
+@article{jumper21, 
+title = {Highly accurate protein structure prediction with AlphaFold},
+author = {Jumper, J. and Evans, R. and Pritzel, A. et al.}, 
+journal = {Nature 596, 583–589 (2021)},  
+uri = {https://doi.org/10.1038/s41586-021-03819-2}
+}
+
+@article{Tsaban22, 
+title = {Harnessing protein folding neural networks for peptide–protein docking},
+author = {Tsaban, T. and Varga, J.K. and Avraham, O. et al..},
+journal = {Nat Commun 13, 176 (2022)},  
+uri = {https://doi.org/10.1038/s41467-021-27838-9}
+}
+
+@article{Adam20, 
+title = {Machine learning approaches to drug response prediction: challenges and recent progress},
+author = {Adam, G. and Rampášek, L. and Safikhani, Z. et al.},
+journal = {Onc. 4, 19 (2020)},  
+uri = {https://doi.org/10.1038/s41698-020-0122-1}
+}
+
+%%sustainability
+@article{Sheikh20, 
+title = {Growing Presence on the Farm: Robots},
+author = {Sheikh, K. A}, 
+uri = {https://www.nytimes.co m/2020/02/13/science/farm-agricultur e-robots.html. }
+}
+
+@misc{zitnick2020,
+      title={An Introduction to Electrocatalyst Design using Machine Learning for Renewable Energy Storage}, 
+      author={C. Lawrence Zitnick and Lowik Chanussot and Abhishek Das and Siddharth Goyal and Javier Heras-Domingo and Caleb Ho and Weihua Hu and Thibaut Lavril and Aini Palizhati and Morgane Riviere and Muhammed Shuaibi and Anuroop Sriram and Kevin Tran and Brandon Wood and Junwoong Yoon and Devi Parikh and Zachary Ulissi},
+      year={2020},
+      eprint={2010.09435},
+      archivePrefix={arXiv},
+      primaryClass={cond-mat.mtrl-sci}
+} 
+
+@misc{stark2022equibind,
+      title={EquiBind: Geometric Deep Learning for Drug Binding Structure Prediction}, 
+      author={Hannes Stärk and Octavian-Eugen Ganea and Lagnajit Pattanaik and Regina Barzilay and Tommi Jaakkola},
+      year={2022},
+      eprint={2202.05146},
+      archivePrefix={arXiv},
+      primaryClass={q-bio.BM}
+}
+@misc{puri2021codenet,
+      title={CodeNet: A Large-Scale AI for Code Dataset for Learning a Diversity of Coding Tasks}, 
+      author={Ruchir Puri and David S. Kung and Geert Janssen and Wei Zhang and Giacomo Domeniconi and Vladimir Zolotov and Julian Dolby and Jie Chen and Mihir Choudhury and Lindsey Decker and Veronika Thost and Luca Buratti and Saurabh Pujar and Shyam Ramji and Ulrich Finkler and Susan Malaika and Frederick Reiss},
+      year={2021},
+      eprint={2105.12655},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE}
+}
+
+@misc{bommasani2022opportunities,
+      title={On the Opportunities and Risks of Foundation Models}, 
+      author={Rishi Bommasani and Drew A. Hudson and Ehsan Adeli and Russ Altman and Simran Arora and Sydney von Arx and Michael S. Bernstein and Jeannette Bohg and Antoine Bosselut and Emma Brunskill and Erik Brynjolfsson and Shyamal Buch and Dallas Card and Rodrigo Castellon and Niladri Chatterji and Annie Chen and Kathleen Creel and Jared Quincy Davis and Dora Demszky and Chris Donahue and Moussa Doumbouya and Esin Durmus and Stefano Ermon and John Etchemendy and Kawin Ethayarajh and Li Fei-Fei and Chelsea Finn and Trevor Gale and Lauren Gillespie and Karan Goel and Noah Goodman and Shelby Grossman and Neel Guha and Tatsunori Hashimoto and Peter Henderson and John Hewitt and Daniel E. Ho and Jenny Hong and Kyle Hsu and Jing Huang and Thomas Icard and Saahil Jain and Dan Jurafsky and Pratyusha Kalluri and Siddharth Karamcheti and Geoff Keeling and Fereshte Khani and Omar Khattab and Pang Wei Koh and Mark Krass and Ranjay Krishna and Rohith Kuditipudi and Ananya Kumar and Faisal Ladhak and Mina Lee and Tony Lee and Jure Leskovec and Isabelle Levent and Xiang Lisa Li and Xuechen Li and Tengyu Ma and Ali Malik and Christopher D. Manning and Suvir Mirchandani and Eric Mitchell and Zanele Munyikwa and Suraj Nair and Avanika Narayan and Deepak Narayanan and Ben Newman and Allen Nie and Juan Carlos Niebles and Hamed Nilforoshan and Julian Nyarko and Giray Ogut and Laurel Orr and Isabel Papadimitriou and Joon Sung Park and Chris Piech and Eva Portelance and Christopher Potts and Aditi Raghunathan and Rob Reich and Hongyu Ren and Frieda Rong and Yusuf Roohani and Camilo Ruiz and Jack Ryan and Christopher Ré and Dorsa Sadigh and Shiori Sagawa and Keshav Santhanam and Andy Shih and Krishnan Srinivasan and Alex Tamkin and Rohan Taori and Armin W. Thomas and Florian Tramèr and Rose E. Wang and William Wang and Bohan Wu and Jiajun Wu and Yuhuai Wu and Sang Michael Xie and Michihiro Yasunaga and Jiaxuan You and Matei Zaharia and Michael Zhang and Tianyi Zhang and Xikun Zhang and Yuhui Zhang and Lucia Zheng and Kaitlyn Zhou and Percy Liang},
+      year={2022},
+      eprint={2108.07258},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{aidanger,
+      title={AI pioneer: ‘The dangers of abuse are very real’}, 
+      author={Davide Castelvecchi},
+      year={2019},
+      url={https://doi.org/10.1038/d41586-019-00505-2}
+}
+
+@misc{godfather,
+      URL={https://www.nytimes.com/2023/05/01/technology/ai-google-chatbot-engineer-quits-hinton.html}
+}
+
+@misc{schwartz2019green,
+      title={Green AI}, 
+      author={Roy Schwartz and Jesse Dodge and Noah A. Smith and Oren Etzioni},
+      year={2019},
+      eprint={1907.10597},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY}
+}
+
+@misc{patterson2021carbon,
+      title={Carbon Emissions and Large Neural Network Training}, 
+      author={David Patterson and Joseph Gonzalez and Quoc Le and Chen Liang and Lluis-Miquel Munguia and Daniel Rothchild and David So and Maud Texier and Jeff Dean},
+      year={2021},
+      eprint={2104.10350},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@misc{Freitag21,
+      title={The real climate and transformative impact of ICT: A critique of estimates, trends, and regulations}, 
+      author={Freitag, C. and Berners-Lee, M. and Widdicks, K. and Knowles, B. and  Blair, G. S. and  Friday, A.},
+      year={2021},
+      URL={https://doi.org/10.1016/j.patter.2021.100340}
+}
+
+@misc{GHG-potoc,
+      title={The GHG Protocol}, 
+      URL={https://ghgprotocol.org},
+      year={2023}
+}
+
+@misc{GHG-guid,
+      title={ICT Sector Guidance Built on the GHG Protocol Product Life Cycle Accounting and Reporting Standard}, 
+      URL={https://www.gesi.org/research/ict-sector-guidance-built-on-the-ghg-protocol-product-life-cycle-accounting-and-reporting-standard},
+      year={2023}
+}
+@misc{LCA,
+      title={Life Cycle Assessment (LCA)}, 
+      URL={http://www.epa.gov/nrmrl/std/lca/lca.html},
+      year={2023}
+}
+@misc{bucila-model-06,
+      title={Model Compression}, 
+      author={Bucilua, C. and Caruana, R. and Niculescu-Mizil, A.},
+      year={2006},
+      URL={https://doi.org/10.1145/1150402.1150464}
+}
+
+@misc{hinton2015distilling,
+      title={Distilling the Knowledge in a Neural Network}, 
+      author={Geoffrey Hinton and Oriol Vinyals and Jeff Dean},
+      year={2015},
+      eprint={1503.02531},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+@article{Strubell-policy-19,
+  author       = {Emma Strubell and
+                  Ananya Ganesh and
+                  Andrew McCallum},
+  title        = {Energy and Policy Considerations for Deep Learning in {NLP}},
+  journal      = {CoRR},
+  volume       = {abs/1906.02243},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1906.02243},
+  eprinttype    = {arXiv},
+  eprint       = {1906.02243},
+  timestamp    = {Thu, 13 Jun 2019 13:36:00 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1906-02243.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{lacoste2019quantifying,
+      title={Quantifying the Carbon Emissions of Machine Learning}, 
+      author={Alexandre Lacoste and Alexandra Luccioni and Victor Schmidt and Thomas Dandres},
+      year={2019},
+      eprint={1910.09700},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY}
+}
+
+@article{Henderson2020Towards, 
+author = {Henderson, Peter and Hu, Jieru and Romoff, Joshua and Brunskill, Emma and Jurafsky, Dan and Pineau, Joelle}, 
+title = {Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning}, 
+year = {2020}, 
+issue_date = {January 2020}, 
+publisher = {JMLR.org}, 
+volume = {21}, 
+number = {1}, 
+issn = {1532-4435}, 
+journal = {J. Mach. Learn. Res.}, 
+month = {jan}
+}
+
+@misc{stanford-fm,
+      title={On the Opportunities and Risks of Foundation Models}, 
+      author={Rishi Bommasani and Drew A. Hudson and Ehsan Adeli and Russ Altman and Simran Arora and Sydney von Arx and Michael S. Bernstein and Jeannette Bohg and Antoine Bosselut and Emma Brunskill and Erik Brynjolfsson and Shyamal Buch and Dallas Card and Rodrigo Castellon and Niladri Chatterji and Annie Chen and Kathleen Creel and Jared Quincy Davis and Dora Demszky and Chris Donahue and Moussa Doumbouya and Esin Durmus and Stefano Ermon and John Etchemendy and Kawin Ethayarajh and Li Fei-Fei and Chelsea Finn and Trevor Gale and Lauren Gillespie and Karan Goel and Noah Goodman and Shelby Grossman and Neel Guha and Tatsunori Hashimoto and Peter Henderson and John Hewitt and Daniel E. Ho and Jenny Hong and Kyle Hsu and Jing Huang and Thomas Icard and Saahil Jain and Dan Jurafsky and Pratyusha Kalluri and Siddharth Karamcheti and Geoff Keeling and Fereshte Khani and Omar Khattab and Pang Wei Koh and Mark Krass and Ranjay Krishna and Rohith Kuditipudi and Ananya Kumar and Faisal Ladhak and Mina Lee and Tony Lee and Jure Leskovec and Isabelle Levent and Xiang Lisa Li and Xuechen Li and Tengyu Ma and Ali Malik and Christopher D. Manning and Suvir Mirchandani and Eric Mitchell and Zanele Munyikwa and Suraj Nair and Avanika Narayan and Deepak Narayanan and Ben Newman and Allen Nie and Juan Carlos Niebles and Hamed Nilforoshan and Julian Nyarko and Giray Ogut and Laurel Orr and Isabel Papadimitriou and Joon Sung Park and Chris Piech and Eva Portelance and Christopher Potts and Aditi Raghunathan and Rob Reich and Hongyu Ren and Frieda Rong and Yusuf Roohani and Camilo Ruiz and Jack Ryan and Christopher Ré and Dorsa Sadigh and Shiori Sagawa and Keshav Santhanam and Andy Shih and Krishnan Srinivasan and Alex Tamkin and Rohan Taori and Armin W. Thomas and Florian Tramèr and Rose E. Wang and William Wang and Bohan Wu and Jiajun Wu and Yuhuai Wu and Sang Michael Xie and Michihiro Yasunaga and Jiaxuan You and Matei Zaharia and Michael Zhang and Tianyi Zhang and Xikun Zhang and Yuhui Zhang and Lucia Zheng and Kaitlyn Zhou and Percy Liang},
+      year={2022},
+      eprint={2108.07258},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{gupta2020chasing,
+      title={Chasing Carbon: The Elusive Environmental Footprint of Computing}, 
+      author={Udit Gupta and Young Geun Kim and Sylvia Lee and Jordan Tse and Hsien-Hsin S. Lee and Gu-Yeon Wei and David Brooks and Carole-Jean Wu},
+      year={2020},
+      eprint={2011.02839},
+      archivePrefix={arXiv},
+      primaryClass={cs.AR}
+}
+@misc{chien2020beyond,
+      title={Beyond PUE: Flexible Datacenters Empowering the Cloud to Decarbonize}, 
+      author={Chien, A. and Zhang, C. and  Lin, L. Rao, V.},
+      year={2020},
+      url={https://hotcarbon.org/pdf/hotcarbon22-chien.pdf}
+}
+
+@misc{Lenherr2021new,
+      title={New universal sustainability metrics to assess edge intelligence}, 
+      author={Lenherr, N. and Pawlitzek, R. and Michel, B.},
+      year={2021},
+      url={https://doi.org/10.1016/j.suscom.2021.100580}
+}
+
+@inproceedings{Eilam2021Towards, 
+author = {Eilam, Tamar}, 
+title = {Towards Transparent and Trustworthy Cloud Carbon Accounting}, year = {2021}, 
+isbn = {9781450391924}, 
+publisher = {Association for Computing Machinery}, 
+address = {New York, NY, USA}, 
+url = {https://doi.org/10.1145/3501255.3501408}, 
+doi = {10.1145/3501255.3501408}, 
+booktitle = {Proceedings of the 22nd International Middleware Conference: Extended Abstracts}, 
+pages = {1–5}, 
+numpages = {5}, 
+keywords = {climate change, carbon footprint, cloud, greenhouse gas, renewable energy}, 
+location = {Virtual Event, Canada}, 
+series = {Middleware '21} 
+}
+
+@misc{SCI,
+      title={software-carbon-intensity-sci-specification-project}, 
+      author={Green Software Foundation},
+      url={https://greensoftware.foundation/articles/software-carbon-intensity-sci-specification-project},
+      year={2023}
+}
+
+@misc{lambda,
+      author={Lambda}, 
+      title={AWS Lambda},
+      url={https://aws.amazon.com/lambda/},
+      year={2023}
+}
+
+@misc{iks,
+      author={IKS}, 
+      title={IBM Cloud Kubernetes Service},
+      url={https://www.ibm.com/cloud/kubernetes-service},
+      year={2023}
+}
+
+@misc{cos,
+      author={COS}, 
+      title={IBM Cloud Object Storage},
+      url={https://www.ibm.com/cloud/object-storage},
+      year={2023}
+}
+
+@misc{GSF,
+    author={GSF},
+      title={Green Software Foundation}, 
+      url={https://greensoftware.foundation},
+      year={2023}
+}
+
+@INPROCEEDINGS{7738674,
+  author={Agrawal, Ankur and Choi, Jungwook and Gopalakrishnan, Kailash and Gupta, Suyog and Nair, Ravi and Oh, Jinwook and Prener, Daniel A. and Shukla, Sunil and Srinivasan, Vijayalakshmi and Sura, Zehra},
+  booktitle={2016 IEEE International Conference on Rebooting Computing (ICRC)}, 
+  title={Approximate computing: Challenges and opportunities}, 
+  year={2016},
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/ICRC.2016.7738674}
+  }
+  
+  @ARTICLE{888701,
+  author={Brooks, D.M. and Bose, P. and Schuster, S.E. and Jacobson, H. and Kudva, P.N. and Buyuktosunoglu, A. and Wellman, J. and Zyuban, V. and Gupta, M. and Cook, P.W.},
+  journal={IEEE Micro}, 
+  title={Power-aware microarchitecture: design and modeling challenges for next-generation microprocessors}, 
+  year={2000},
+  volume={20},
+  number={6},
+  pages={26-44},
+  doi={10.1109/40.888701}
+  }
+
+@article{DESISLAVOV2023100857,
+title = {Trends in AI inference energy consumption: Beyond the performance-vs-parameter laws of deep learning},
+journal = {Sustainable Computing: Informatics and Systems},
+volume = {38},
+pages = {100857},
+year = {2023},
+issn = {2210-5379},
+doi = {https://doi.org/10.1016/j.suscom.2023.100857},
+url = {https://www.sciencedirect.com/science/article/pii/S2210537923000124},
+author = {Radosvet Desislavov and Fernando Martínez-Plumed and José Hernández-Orallo}
+}
+
+
+@book{dc_computer,
+author = {Barroso, Luiz Andr and Clidaras, Jimmy and Hlzle, Urs},
+title = {The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines},
+year = {2013},
+isbn = {1627050094},
+publisher = {Morgan & Claypool Publishers},
+edition = {2nd}
+}
+
+@techreport{epa,
+  title       = "Report to congress on server and data center energy efficiency",
+  institution = "U.S. Environmental Protection Agency",
+  year        = {2007}
+}
+
+
+@techreport{epa1,
+  author      = "Heather Klemick and Elizabeth Kopits and Ann Wolverton",
+  title       = "Data Center Energy Efficiency Investments: Qualitative Evidence from Focus Groups and Interviews",
+  institution = "U.S. Environmental Protection Agency",
+  year        =  {2017}
+}
+
+@article{DBLP:journals/corr/abs-1908-10063,
+  author       = {Dogu Araci},
+  title        = {FinBERT: Financial Sentiment Analysis with Pre-trained Language Models},
+  journal      = {CoRR},
+  volume       = {abs/1908.10063},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1908.10063},
+  eprinttype    = {arXiv},
+  eprint       = {1908.10063},
+  timestamp    = {Thu, 29 Aug 2019 16:32:34 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1908-10063.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+% XLM-RoBERTA
+@article{DBLP:journals/corr/abs-1911-02116,
+  author       = {Alexis Conneau and
+                  Kartikay Khandelwal and
+                  Naman Goyal and
+                  Vishrav Chaudhary and
+                  Guillaume Wenzek and
+                  Francisco Guzm{\'{a}}n and
+                  Edouard Grave and
+                  Myle Ott and
+                  Luke Zettlemoyer and
+                  Veselin Stoyanov},
+  title        = {Unsupervised Cross-lingual Representation Learning at Scale},
+  journal      = {CoRR},
+  volume       = {abs/1911.02116},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1911.02116},
+  eprinttype    = {arXiv},
+  eprint       = {1911.02116},
+  timestamp    = {Mon, 11 Nov 2019 18:38:09 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1911-02116.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:journals/corr/abs-1901-08746,
+  author       = {Jinhyuk Lee and
+                  Wonjin Yoon and
+                  Sungdong Kim and
+                  Donghyeon Kim and
+                  Sunkyu Kim and
+                  Chan Ho So and
+                  Jaewoo Kang},
+  title        = {BioBERT: a pre-trained biomedical language representation model for
+                  biomedical text mining},
+  journal      = {CoRR},
+  volume       = {abs/1901.08746},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1901.08746},
+  eprinttype    = {arXiv},
+  eprint       = {1901.08746},
+  timestamp    = {Sat, 23 Jan 2021 01:13:47 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1901-08746.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{trivedi2023neural,
+      title={Neural Architecture Search for Effective Teacher-Student Knowledge Transfer in Language Models}, 
+      author={Aashka Trivedi and Takuma Udagawa and Michele Merler and Rameswar Panda and Yousef El-Kurdi and Bishwaranjan Bhattacharjee},
+      year={2023},
+      eprint={2303.09639},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@ARTICLE{7229319,
+  author={Lee, Eun Kyung and Viswanathan, Hariharasudhan and Pompili, Dario},
+  journal={IEEE Transactions on Cloud Computing}, 
+  title={Proactive Thermal-Aware Resource Management in Virtualized HPC Cloud Datacenters}, 
+  year={2017},
+  volume={5},
+  number={2},
+  pages={234-248},
+  doi={10.1109/TCC.2015.2474368}
+}
+
+@article{ZHANG2021102253,
+title = {A survey on data center cooling systems: Technology, power consumption modeling and control strategy optimization},
+journal = {Journal of Systems Architecture},
+volume = {119},
+pages = {102253},
+year = {2021},
+issn = {1383-7621},
+doi = {https://doi.org/10.1016/j.sysarc.2021.102253},
+url = {https://www.sciencedirect.com/science/article/pii/S1383762121001739},
+author = {Qingxia Zhang and Zihao Meng and Xianwen Hong and Yuhao Zhan and Jia Liu and Jiabao Dong and Tian Bai and Junyu Niu and M. Jamal Deen},
+keywords = {CPSS, Cooling system, Data center, Power consumption management, Optimization strategy}
+}
+
+
+@ARTICLE{7738551,
+  author={Xia, Wenfeng and Zhao, Peng and Wen, Yonggang and Xie, Haiyong},
+  journal={IEEE Communications Surveys & Tutorials}, 
+  title={A Survey on Data Center Networking (DCN): Infrastructure and Operations}, 
+  year={2017},
+  volume={19},
+  number={1},
+  pages={640-656},
+  doi={10.1109/COMST.2016.2626784}}
+  
+  @ARTICLE{7279063,
+  author={Dayarathna, Miyuru and Wen, Yonggang and Fan, Rui},
+  journal={IEEE Communications Surveys & Tutorials}, 
+  title={Data Center Energy Consumption Modeling: A Survey}, 
+  year={2016},
+  volume={18},
+  number={1},
+  pages={732-794},
+  doi={10.1109/COMST.2015.2481183}}
+  
+  
+@INPROCEEDINGS{9752582,
+  author={Kanagasubaraja, S. and Hema, M. and Valarmathi, K. and Kumar, Naveen and Kumar, Bala Pradeep M and Balaji, N},
+  booktitle={2022 International Conference on Advances in Computing, Communication and Applied Informatics (ACCAI)}, 
+  title={Energy Optimization Algorithm to Reduce Power Consumption in Cloud Data Center}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/ACCAI53970.2022.9752582}}
+
+
+@article{mukherjee2020detailed,
+  title={A detailed study on data centre energy efficiency and efficient cooling techniques},
+  author={Mukherjee, Dibyendu and Chakraborty, Srabanti and Sarkar, Indranil and Ghosh, Ahona and Roy, Sandip},
+  journal={International Journal},
+  volume={9},
+  number={5},
+  year={2020}
+}
+
+
+@article{CHAUHAN2019450,
+title = {Characterization of a dual taper thermosiphon loop for CPU cooling in data centers},
+journal = {Applied Thermal Engineering},
+volume = {146},
+pages = {450-458},
+year = {2019},
+issn = {1359-4311},
+doi = {https://doi.org/10.1016/j.applthermaleng.2018.10.010},
+url = {https://www.sciencedirect.com/science/article/pii/S135943111834016X},
+author = {Aranya Chauhan and Satish G. Kandlikar}
+}
+
+
+@article{ROSTIROLLA2022111787,
+title = {A survey of challenges and solutions for the integration of renewable energy in datacenters},
+journal = {Renewable and Sustainable Energy Reviews},
+volume = {155},
+pages = {111787},
+year = {2022},
+issn = {1364-0321},
+doi = {https://doi.org/10.1016/j.rser.2021.111787},
+url = {https://www.sciencedirect.com/science/article/pii/S136403212101056X},
+author = {G. Rostirolla and L. Grange and T. Minh-Thuyen and P. Stolf and J.M. Pierson and G. {Da Costa} and G. Baudic and M. Haddad and A. Kassab and J.M. Nicod and L. Philippe and V. Rehn-Sonigo and R. Roche and B. Celik and S. Caux and J. Lecuivre},
+keywords = {Datacenters, Renewable energy, Energy scheduling, IT management}
+}
+
+@article{jouppi2023tpu,
+  title={Tpu v4: An optically reconfigurable supercomputer for machine learning with hardware support for embeddings},
+  author={Jouppi, Norman P and Kurian, George and Li, Sheng and Ma, Peter and Nagarajan, Rahul and Nai, Lifeng and Patil, Nishant and Subramanian, Suvinay and Swing, Andy and Towles, Brian and others},
+  journal={arXiv preprint arXiv:2304.01433},
+  year={2023}
+}
+
+@inproceedings{jiang2020power,
+  title={The power of ARM64 in public clouds},
+  author={Jiang, Qingye and Lee, Young Choon and Zomaya, Albert Y},
+  booktitle={2020 20th IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing (CCGRID)},
+  pages={459--468},
+  year={2020},
+  organization={IEEE}
+}
+
+@article{capra2020updated,
+  title={An updated survey of efficient hardware architectures for accelerating deep convolutional neural networks},
+  author={Capra, Maurizio and Bussolino, Beatrice and Marchisio, Alberto and Shafique, Muhammad and Masera, Guido and Martina, Maurizio},
+  journal={Future Internet},
+  volume={12},
+  number={7},
+  pages={113},
+  year={2020},
+  publisher={MDPI}
+}
+
+@article{ross2022large,
+  title={Large-scale chemical language representations capture molecular structure and properties},
+  author={Ross, Jerret and Belgodere, Brian and Chenthamarakshan, Vijil and Padhi, Inkit and Mroueh, Youssef and Das, Payel},
+  journal={Nature Machine Intelligence},
+  volume={4},
+  number={12},
+  pages={1256--1264},
+  year={2022},
+  publisher={Nature Publishing Group UK London}
+}
+
+@misc{workshop2023bloom,
+      title={BLOOM: A 176B-Parameter Open-Access Multilingual Language Model}, 
+      author={BigScience Workshop and : and Teven Le Scao and Angela Fan and Christopher Akiki and Ellie Pavlick and Suzana Ilić and Daniel Hesslow and Roman Castagné and Alexandra Sasha Luccioni and François Yvon and Matthias Gallé and Jonathan Tow and Alexander M. Rush and Stella Biderman and Albert Webson and Pawan Sasanka Ammanamanchi and Thomas Wang and Benoît Sagot and Niklas Muennighoff and Albert Villanova del Moral and Olatunji Ruwase and Rachel Bawden and Stas Bekman and Angelina McMillan-Major and Iz Beltagy and Huu Nguyen and Lucile Saulnier and Samson Tan and Pedro Ortiz Suarez and Victor Sanh and Hugo Laurençon and Yacine Jernite and Julien Launay and Margaret Mitchell and Colin Raffel and Aaron Gokaslan and Adi Simhi and Aitor Soroa and Alham Fikri Aji and Amit Alfassy and Anna Rogers and Ariel Kreisberg Nitzav and Canwen Xu and Chenghao Mou and Chris Emezue and Christopher Klamm and Colin Leong and Daniel van Strien and David Ifeoluwa Adelani and Dragomir Radev and Eduardo González Ponferrada and Efrat Levkovizh and Ethan Kim and Eyal Bar Natan and Francesco De Toni and Gérard Dupont and Germán Kruszewski and Giada Pistilli and Hady Elsahar and Hamza Benyamina and Hieu Tran and Ian Yu and Idris Abdulmumin and Isaac Johnson and Itziar Gonzalez-Dios and Javier de la Rosa and Jenny Chim and Jesse Dodge and Jian Zhu and Jonathan Chang and Jörg Frohberg and Joseph Tobing and Joydeep Bhattacharjee and Khalid Almubarak and Kimbo Chen and Kyle Lo and Leandro Von Werra and Leon Weber and Long Phan and Loubna Ben allal and Ludovic Tanguy and Manan Dey and Manuel Romero Muñoz and Maraim Masoud and María Grandury and Mario Šaško and Max Huang and Maximin Coavoux and Mayank Singh and Mike Tian-Jian Jiang and Minh Chien Vu and Mohammad A. Jauhar and Mustafa Ghaleb and Nishant Subramani and Nora Kassner and Nurulaqilla Khamis and Olivier Nguyen and Omar Espejel and Ona de Gibert and Paulo Villegas and Peter Henderson and Pierre Colombo and Priscilla Amuok and Quentin Lhoest and Rheza Harliman and Rishi Bommasani and Roberto Luis López and Rui Ribeiro and Salomey Osei and Sampo Pyysalo and Sebastian Nagel and Shamik Bose and Shamsuddeen Hassan Muhammad and Shanya Sharma and Shayne Longpre and Somaieh Nikpoor and Stanislav Silberberg and Suhas Pai and Sydney Zink and Tiago Timponi Torrent and Timo Schick and Tristan Thrush and Valentin Danchev and Vassilina Nikoulina and Veronika Laippala and Violette Lepercq and Vrinda Prabhu and Zaid Alyafeai and Zeerak Talat and Arun Raja and Benjamin Heinzerling and Chenglei Si and Davut Emre Taşar and Elizabeth Salesky and Sabrina J. Mielke and Wilson Y. Lee and Abheesht Sharma and Andrea Santilli and Antoine Chaffin and Arnaud Stiegler and Debajyoti Datta and Eliza Szczechla and Gunjan Chhablani and Han Wang and Harshit Pandey and Hendrik Strobelt and Jason Alan Fries and Jos Rozen and Leo Gao and Lintang Sutawika and M Saiful Bari and Maged S. Al-shaibani and Matteo Manica and Nihal Nayak and Ryan Teehan and Samuel Albanie and Sheng Shen and Srulik Ben-David and Stephen H. Bach and Taewoon Kim and Tali Bers and Thibault Fevry and Trishala Neeraj and Urmish Thakker and Vikas Raunak and Xiangru Tang and Zheng-Xin Yong and Zhiqing Sun and Shaked Brody and Yallow Uri and Hadar Tojarieh and Adam Roberts and Hyung Won Chung and Jaesung Tae and Jason Phang and Ofir Press and Conglong Li and Deepak Narayanan and Hatim Bourfoune and Jared Casper and Jeff Rasley and Max Ryabinin and Mayank Mishra and Minjia Zhang and Mohammad Shoeybi and Myriam Peyrounette and Nicolas Patry and Nouamane Tazi and Omar Sanseviero and Patrick von Platen and Pierre Cornette and Pierre François Lavallée and Rémi Lacroix and Samyam Rajbhandari and Sanchit Gandhi and Shaden Smith and Stéphane Requena and Suraj Patil and Tim Dettmers and Ahmed Baruwa and Amanpreet Singh and Anastasia Cheveleva and Anne-Laure Ligozat and Arjun Subramonian and Aurélie Névéol and Charles Lovering and Dan Garrette and Deepak Tunuguntla and Ehud Reiter and Ekaterina Taktasheva and Ekaterina Voloshina and Eli Bogdanov and Genta Indra Winata and Hailey Schoelkopf and Jan-Christoph Kalo and Jekaterina Novikova and Jessica Zosa Forde and Jordan Clive and Jungo Kasai and Ken Kawamura and Liam Hazan and Marine Carpuat and Miruna Clinciu and Najoung Kim and Newton Cheng and Oleg Serikov and Omer Antverg and Oskar van der Wal and Rui Zhang and Ruochen Zhang and Sebastian Gehrmann and Shachar Mirkin and Shani Pais and Tatiana Shavrina and Thomas Scialom and Tian Yun and Tomasz Limisiewicz and Verena Rieser and Vitaly Protasov and Vladislav Mikhailov and Yada Pruksachatkun and Yonatan Belinkov and Zachary Bamberger and Zdeněk Kasner and Alice Rueda and Amanda Pestana and Amir Feizpour and Ammar Khan and Amy Faranak and Ana Santos and Anthony Hevia and Antigona Unldreaj and Arash Aghagol and Arezoo Abdollahi and Aycha Tammour and Azadeh HajiHosseini and Bahareh Behroozi and Benjamin Ajibade and Bharat Saxena and Carlos Muñoz Ferrandis and Danish Contractor and David Lansky and Davis David and Douwe Kiela and Duong A. Nguyen and Edward Tan and Emi Baylor and Ezinwanne Ozoani and Fatima Mirza and Frankline Ononiwu and Habib Rezanejad and Hessie Jones and Indrani Bhattacharya and Irene Solaiman and Irina Sedenko and Isar Nejadgholi and Jesse Passmore and Josh Seltzer and Julio Bonis Sanz and Livia Dutra and Mairon Samagaio and Maraim Elbadri and Margot Mieskes and Marissa Gerchick and Martha Akinlolu and Michael McKenna and Mike Qiu and Muhammed Ghauri and Mykola Burynok and Nafis Abrar and Nazneen Rajani and Nour Elkott and Nour Fahmy and Olanrewaju Samuel and Ran An and Rasmus Kromann and Ryan Hao and Samira Alizadeh and Sarmad Shubber and Silas Wang and Sourav Roy and Sylvain Viguier and Thanh Le and Tobi Oyebade and Trieu Le and Yoyo Yang and Zach Nguyen and Abhinav Ramesh Kashyap and Alfredo Palasciano and Alison Callahan and Anima Shukla and Antonio Miranda-Escalada and Ayush Singh and Benjamin Beilharz and Bo Wang and Caio Brito and Chenxi Zhou and Chirag Jain and Chuxin Xu and Clémentine Fourrier and Daniel León Periñán and Daniel Molano and Dian Yu and Enrique Manjavacas and Fabio Barth and Florian Fuhrimann and Gabriel Altay and Giyaseddin Bayrak and Gully Burns and Helena U. Vrabec and Imane Bello and Ishani Dash and Jihyun Kang and John Giorgi and Jonas Golde and Jose David Posada and Karthik Rangasai Sivaraman and Lokesh Bulchandani and Lu Liu and Luisa Shinzato and Madeleine Hahn de Bykhovetz and Maiko Takeuchi and Marc Pàmies and Maria A Castillo and Marianna Nezhurina and Mario Sänger and Matthias Samwald and Michael Cullan and Michael Weinberg and Michiel De Wolf and Mina Mihaljcic and Minna Liu and Moritz Freidank and Myungsun Kang and Natasha Seelam and Nathan Dahlberg and Nicholas Michio Broad and Nikolaus Muellner and Pascale Fung and Patrick Haller and Ramya Chandrasekhar and Renata Eisenberg and Robert Martin and Rodrigo Canalli and Rosaline Su and Ruisi Su and Samuel Cahyawijaya and Samuele Garda and Shlok S Deshmukh and Shubhanshu Mishra and Sid Kiblawi and Simon Ott and Sinee Sang-aroonsiri and Srishti Kumar and Stefan Schweter and Sushil Bharati and Tanmay Laud and Théo Gigant and Tomoya Kainuma and Wojciech Kusa and Yanis Labrak and Yash Shailesh Bajaj and Yash Venkatraman and Yifan Xu and Yingxin Xu and Yu Xu and Zhe Tan and Zhongli Xie and Zifan Ye and Mathilde Bras and Younes Belkada and Thomas Wolf},
+      year={2023},
+      eprint={2211.05100},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{touvron2023llama,
+      title={LLaMA: Open and Efficient Foundation Language Models}, 
+      author={Hugo Touvron and Thibaut Lavril and Gautier Izacard and Xavier Martinet and Marie-Anne Lachaux and Timothée Lacroix and Baptiste Rozière and Naman Goyal and Eric Hambro and Faisal Azhar and Aurelien Rodriguez and Armand Joulin and Edouard Grave and Guillaume Lample},
+      year={2023},
+      eprint={2302.13971},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+

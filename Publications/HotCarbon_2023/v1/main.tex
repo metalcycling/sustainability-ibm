@@ -1,0 +1,87 @@
+% v2-acmtog-sample.tex, dated March 7 2012
+% This is a sample file for ACM Transactions on Graphics
+%
+% Compilation using 'acmtog.cls' - version 1.2 (March 2012), Aptara Inc.
+% (c) 2010 Association for Computing Machinery (ACM)
+%
+% Questions/Suggestions/Feedback should be addressed to => "acmtexsupport@aptaracorp.com".
+% Users can also go through the FAQs available on the journal's submission webpage.
+%
+% Steps to compile: latex, bibtex, latex latex
+%
+% For tracking purposes => this is v1.2 - March 2012
+\documentclass{acmtog} % V1.2
+\newcommand{\ek}[1]{{[\textbf{\sc ek}: \textit{#1}]}}
+\acmVolume{VV}
+\acmNumber{N}
+\acmYear{YYYY}
+\acmMonth{Month}
+\acmArticleNum{XXX}
+\acmdoi{10.1145/XXXXXXX.YYYYYYY}
+
+%\acmVolume{28}
+%\acmNumber{4}
+%\acmYear{2009}
+%\acmMonth{September}
+%\acmArticleNum{106}
+%\acmdoi{10.1145/1559755.1559763}
+
+\begin{document}
+
+%\markboth{V. F. Pamplona et al.}{Photorealistic Models for Pupil Light Reflex and Iridal Pattern Deformation}
+
+\title{Towards a Methodology and Framework for AI Sustainability Metric} % title
+
+\author{Some authors}
+
+\category{I.3.7}{Computer Graphics}{Three-Dimensional Graphics and Realism}[Animation]
+\category{I.3.5}{Computer Graphics}{Computational Geometry and Object Modeling}[Physically based modeling]
+
+\terms{}
+
+\keywords{}
+
+%\acmformat{Vitor F. Pamplona, Manuel M. Oliveira, Gladimir V. G. Baranoski,
+%and Sean Fogarty. 2009. Photorealistic models for pupil light reflex and iridal pattern deformation.
+%{\em ACM Trans. Graph.} 28, 4, Article 106 (September 2009), 10 pages.\\
+%\doiline}
+
+\maketitle
+
+%\begin{bottomstuff}
+%\end{bottomstuff}
+
+\begin{abstract}
+Recently, we are witnessing truly groundbreaking achievements using AI models, 
+such as the much talked about generative large language models, and a wide range of application, 
+with a tremendous potential to accelerate scientific discovery and to enhance productivity. 
+At the same time, AI models and their use are growing at an exponential pace, and consequently, their environmental footprint implications are staggering. 
+There is an urgent need for the community, including data scientists, businesses, academia, government, and practitioners, to come together and conduct a meaningful conversations about the environmental cost of AI. For this, the authors of this article posit that we ought to develop an agreed upon methodology, and framework to quantify AI efficiency across the life cycle. In particular, 
+we factor in recent advances bringing to the front the concept of foundation models, promoting model re-use, 
+as a strategy to drive efficiencies. 
+We claim that a methodology and framework for Sustainable AI must provide the insight necessary for the different stake holders, including data scientists, and practitioners, to make informed decisions, across the model life cycle, factoring in trade-offs such as accuracy, time, environmental impact, and societal benefits. Such a methodology and framework must be consistent with existing standards used in other domains such as the GHG protocols and accompanying guidance  documents, and LCA standards. 
+Recent work on quantifying the environmental cost of AI, falls short in multiple areas, such as, that
+it either limits the discussion to the examples perused by the businesses behind the technology under examination, and are not easily  generalizable; they are ignoring the cost of maintaining an AI model {\it after} the initial training and deployment phase, including model distillation, fine-tuning, and re-training, and they have no way to factor in the benefits of model re-use, which is at the core of the promise of foundation models, thus injuring our ability to quantify the benefits of life cycle strategies. 
+In this paper, we analyse existing limitations of proposed approaches for quantifying the environmental cost of AI.  We take a first step in proposing a methodology that addresses these limitations. We exemplify the concepts, using a complex production scale example of LLM across the life cycle. We analyse the requirements for a framework that will produce the necessary telemetry and computational data to support the various stake holders in the decision making process, throughout the life cycle, and we list opportunities for further research in this critical area. 
+\end{abstract}
+
+\input{background}
+
+%\input{metric.tex}
+%
+%\input{opportunities}
+
+\appendix
+
+% Bibliography
+\bibliographystyle{ACM-Reference-Format-Journals}
+\bibliography{acmtog-sample-bibfile}
+                                % Sample .bib file with references that match those in
+                                % the 'Specifications Document (V1.5)' as well containing
+                                % 'legacy' bibs and bibs with 'alternate codings'.
+                                % Gerry Murray - March 2012
+
+\received{}{}
+
+\end{document}
+% End of v2-acmtog-sample.tex (March 2012) - Gerry Murray, ACM
