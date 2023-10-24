@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+    name: scratch-cos
+    namespace: metalcycling
+    annotations:
+        ibm.io/auto-create-bucket: "false"
+        ibm.io/auto-delete-bucket: "false"
+        ibm.io/bucket: scratch-cos
+        ibm.io/endpoint: https://s3.direct.us-east.cloud-object-storage.appdomain.cloud
+        ibm.io/secret-name: scratch-cos
+        ibm.io/tls-cipher-suite: default
+    finalizers:
+        - kubernetes.io/pvc-protection
+spec:
+    storageClassName: ibmc-s3fs-cos-perf
+    volumeMode: Filesystem
+    accessModes:
+        - ReadWriteMany
+    resources:
+        requests:
+            storage: 64Gi

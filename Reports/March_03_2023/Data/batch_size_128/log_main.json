@@ -1,0 +1,1 @@
+[{"gpus": 8, "simulated_gpus": 8, "num_steps": 200000, "data_path": "/workspace/data/pedro/input/wiki_processed_shards_provided", "log_dir": "/workspace/data/pedro/roberta-plus/batch_size_128", "pre_caching": false}, {"num_params": 124259668}, {"lr": 0.00019966252583997982}, {"effective_bsize": 1024}, {"num_steps": 200000, "effective_epochs": 714.2857142857143}]
