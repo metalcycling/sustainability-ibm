@@ -1,0 +1,37 @@
+---------------------------------------------------------------------------------
+# July 16th, 2023
+
+- Follow the installation instructions from "Kepler Sustainability" here: 'https://sustainable-computing.io/installation/kepler/'
+    * Use the manifests and install Prometheus using the instructions given here (not the official site)
+    * If using minikube, patch the services in the 'monitoring' namespace to expose the ports: '$ kubectl -n <namespace> patch service <service name> -p '{"spec": {"type": "NodePort"}}''
+- Add the '/usr/src' directory to ALL the nodes in the Kubernetes cluster
+    * In minikube this can be done by using '$ minikube ssh --node=<node name>' follow by '$ sudo mkdir /usr/src'
+
+---------------------------------------------------------------------------------
+# June 26th, 2023
+
+Installing Kepler:
+- DO NOT use the Helm instructions to install or clean Kepler, use the manual installation instead
+- Go to the installation instructions her: https://sustainable-computing.io/installation/kepler/
+    * Jump to the 'Deploy from source code' section
+
+---------------------------------------------------------------------------------
+# May 23rd, 2023
+
+- To open the Grafana dashboard, we need to decode the secret using 'base64'
+    * Username: admin
+    * Password (decoded): oEc8Qn8I7JRV0w==
+    * URL: http://grafana-service-grafana.apps.dev.llmdev.res.ibm.com/
+- Example of Prometheus query: 'kepler_container_gpu_joules_total{container_namespace="hfwen", pod_name="hf-4node-worker-0", mode="idle"}'
+
+---------------------------------------------------------------------------------
+# May 22nd, 2023
+
+- First attempt at installing Kepler on the stagging cluster
+- Installation instructions can be found here: 'https://sustainable-computing.io/installation/kepler/'
+    * To add the helm repo: 'helm repo add kepler https://sustainable-computing-io.github.io/kepler-helm-chart'
+- Follow the instruction to 'Deploy from source code'
+    * This will install the Daemonsets in all the nodes to collect the data to be exported to Prometheus
+- The namespace for Prometheus and Grafana is 'monitoring'
+
+---------------------------------------------------------------------------------

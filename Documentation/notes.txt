@@ -1,0 +1,16 @@
+---------------------------------------------------------------------------------
+# July 17th, 2023
+
+1. Validation of model for Vela / IBM Cloud - all nodes are identical. No idle power. assumption: pod ties entire machine [marcelo, peng]
+2. End-to end: aggregation, query, Command Line - user actions [Pedro]
+   project A 5 people goes to the same energy management - based on name label
+   checkpoint - document -
+   INSTALLATION: KEPLER + Prometheus
+3. Scalability + Overhead — roll out in stage - run for two weeks [Max]
+4. Static analysis — node highly correlated with GPU [EK]
+5. Functionality and performance testing - Yue, Rina
+   TRELO - one card with the big items
+   GITHUB with Zenhub add items -
+   documentation - full session - road maps -
+
+---------------------------------------------------------------------------------
