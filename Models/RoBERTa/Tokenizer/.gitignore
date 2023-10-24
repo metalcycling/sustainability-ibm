@@ -2,3 +2,8 @@ roberta-tokenizer/
 wiki_shards/
 wiki_processed_shards/
 .ipynb_checkpoints/
+cbt_processed_shards/
+cbt_shards/
+roberta-tokenizer/
+wiki_processed_shards/
+wiki_shards/
