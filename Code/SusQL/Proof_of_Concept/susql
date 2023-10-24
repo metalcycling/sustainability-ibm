@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#
+# SusQL: Querying sustainability metrics using Kepler and Prometheus
+#
+
+PROMETHEUS_URL="http://192.168.39.83:32395"
+
+# Parse input
+labels=${1:-}
+energy="0.0"
+
+if [[ -n ${labels} ]]; then
+    pod_names=$(kubectl get pods --all-namespaces --selector ${1} --no-headers -o custom-columns=":metadata.name")
+
+    for pod_name in ${pod_names}
+    do
+        pod_energy=$(promql --host ${PROMETHEUS_URL} "kepler_container_joules_total{pod_name=\"${pod_name}\",mode=\"dynamic\"}" --no-headers | awk '{print $14}')
+        energy=$(echo ${energy} + ${pod_energy} | bc)
+    done
+
+    echo "Total (Joules):" ${energy}
+else
+    echo "No labels were provided"
+fi

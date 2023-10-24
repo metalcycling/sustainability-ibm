@@ -1,0 +1,79 @@
+# Job name and namespace
+namespace: metalcycling
+jobName: roberta
+priority: "default-priority"
+
+# Container image to be used
+containerImage: ghcr.io/foundation-model-stack/base:pytorch-latest-nightly-20230212
+
+# Runtime hardware specificiations
+numPods: 1
+numCpusPerPod: 16
+numGpusPerPod: 8
+totalMemoryPerPod: 512Gi
+terminationGracePeriodSeconds: 1
+
+# Multinic support
+multiNicNetworkName: multi-nic-network
+
+# Environment
+environmentVariables:
+    - name: NCCL_MIN_NCHANNELS
+      value: "2"
+    - name: CUDA_VISIBLE_DEVICES
+      value: "0,1,2,3,4,5,6,7"
+    - name: NCCL_TREE_THRESHOLD
+      value: "0"
+    - name: NCCL_ALGO
+      value: Ring # Tree
+    - name: NCCL_IGNORE_CPU_AFFINITY
+      value: "1"
+    - name: NCCL_DEBUG_SUBSYS
+      value: INIT,GRAPH,ENV,TUNING
+    - name: NCCL_SOCKET_NTHREADS
+      value: "2"
+    - name: NCCL_IB_DISABLE
+      value: "1"
+    - name: NCCL_NSOCKS_PERTHREAD
+      value: "4"
+    - name: NCCL_DEBUG
+      value: INFO
+    - name: PYTHONPATH
+      value: /workspace/foundation-model-stack
+    - name: BATCH_SIZE
+      value: 64
+    - name: NUM_STEPS
+      value: 400000
+    - name: OUTPUT_DIR
+      value: output
+
+# GIT configuration
+sshGitCloneConfig:
+    secretName: ssh-key-secret
+    configMapName: ssh-key-configmap
+
+# Commands
+setupCommands:
+    - git clone git@github.com:metalcycling/sustainability-ibm.git
+    - git clone -b 0-0-5 git@github.ibm.com:ai-foundation/foundation-model-stack.git
+    - cd foundation-model-stack/nlp/pretraining
+    - bash /workspace/sustainability-ibm/Utilities/power.sh 0.05 > /workspace/power_${BATCH_SIZE}.dat &
+    - export POWER_PID=$!
+    - sleep 10
+    - torchrun --nnodes=${WORLD_SIZE} --node_rank=${RANK} --nproc_per_node=$(nvidia-smi -L | wc -l) --rdzv_id=101 --rdzv_endpoint="${MASTER_ADDR}:${MASTER_PORT}" train_robertaplus_torchnative.py --simulated_gpus=$(nvidia-smi -L | wc -l) --b_size=${BATCH_SIZE} --num_steps=${NUM_STEPS} --datapath=/workspace/data/pedro/input/wiki_processed_shards --logdir=/workspace/data/pedro/${OUTPUT_DIR}/batch_size_${BATCH_SIZE} --report_interval=10 --reset_stepcount --vocab=50261
+      #- torchrun --nnodes=${WORLD_SIZE} --node_rank=${RANK} --nproc_per_node=$(nvidia-smi -L | wc -l) --rdzv_id=101 --rdzv_endpoint="${MASTER_ADDR}:${MASTER_PORT}" train_robertaplus_torchnative.py --simulated_gpus=$(nvidia-smi -L | wc -l) --b_size=${BATCH_SIZE} --num_steps=${NUM_STEPS} --datapath=/workspace/data/pedro/input/cbt --logdir=/workspace/data/pedro/${OUTPUT_DIR}/batch_size_${BATCH_SIZE} --report_interval=10 --reset_stepcount --vocab=50261
+      #- sleep 30
+    - kill ${POWER_PID}
+      #- mv /workspace/power_${BATCH_SIZE}.dat /workspace/data/pedro/${OUTPUT_DIR}/batch_size_${BATCH_SIZE}/power.dat
+    - sleep infinity
+
+# Volumes
+#volumes:
+#    - name: scratch
+#      claimName: mcad-testing-prod-bucket
+#      mountPath: /workspace/data
+
+# Requeuing
+#requeuing:
+#    timeInSeconds: 120
+#    growthType: "none"

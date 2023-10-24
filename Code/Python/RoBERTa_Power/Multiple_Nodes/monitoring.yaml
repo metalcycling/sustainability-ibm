@@ -1,0 +1,29 @@
+# Job name and namespace
+namespace: mcad-testing-prod
+jobName: monitoring
+priority: "low-priority"
+
+# Container image to be used
+containerImage: ghcr.io/foundation-model-stack/base:pytorch-latest-nightly-20230212
+
+# Runtime hardware specificiations
+numPods: 1
+numCpusPerPod: 1
+numGpusPerPod: 0
+totalMemoryPerPod: 8Gi
+terminationGracePeriodSeconds: 1
+
+# GIT configuration
+sshGitCloneConfig:
+    secretName: ssh-key-secret
+    configMapName: ssh-key-configmap
+
+# Commands
+setupCommands:
+    - sleep infinity
+
+# Volumes
+volumes:
+    - name: scratch
+      claimName: mcad-testing-prod-bucket
+      mountPath: /workspace/data

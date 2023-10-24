@@ -1,0 +1,48 @@
+groupings:
+
+    - filepath: "vault/model-1.yaml"
+      labels:
+          - key: "project-name"
+            value: "model-1"
+
+    - filepath: "vault/experiment-1.yaml"
+      labels:
+          - key: "project-name"
+            value: "model-1"
+          - key: "experiment-name"
+            value: "exp-1"
+
+    - filepath: "vault/experiment-2.yaml"
+      labels:
+          - key: "project-name"
+            value: "model-1"
+          - key: "experiment-name"
+            value: "exp-2"
+
+    - filepath: "vault/experiment-3.yaml"
+      labels:
+          - key: "project-name"
+            value: "model-1"
+          - key: "experiment-name"
+            value: "exp-3"
+
+    - filepath: "vault/experiment-4.yaml"
+      labels:
+          - key: "project-name"
+            value: "model-1"
+          - key: "experiment-name"
+            value: "exp-4"
+
+    - filepath: "vault/group-1.yaml"
+      labels:
+          - key: "project-name"
+            value: "model-1"
+          - key: "group-name"
+            value: "grp-1"
+
+    - filepath: "vault/group-2.yaml"
+      labels:
+          - key: "project-name"
+            value: "model-1"
+          - key: "group-name"
+            value: "grp-2"

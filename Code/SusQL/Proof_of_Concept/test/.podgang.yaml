@@ -1,0 +1,75 @@
+---
+# Source: generator/templates/podgang.yaml
+apiVersion: mcad.ibm.com/v1beta1
+kind: AppWrapper
+metadata:
+    name: pod-sample
+    namespace: default
+spec:
+    priority: 5
+    priorityslope: 0.0
+    schedulingSpec:
+        minAvailable: 1
+        requeuing:
+            timeInSeconds: 300
+            growthType: "none"
+            maxNumRequeuings: 1
+    resources:
+        Items: []
+        GenericItems:
+            - replicas: 1
+              generictemplate:
+                  apiVersion: scheduling.volcano.sh/v1beta1
+                  kind: PodGroup
+                  metadata:
+                      name: pod-sample
+                      namespace: default
+                      labels:
+                          appwrapper.mcad.ibm.com: pod-sample
+                  spec:
+                      minMember: 1
+            - replicas: 1
+              completionstatus: "Complete"
+              custompodresources:
+                  - replicas: 1
+                    requests:
+                        cpu: 500m
+                        nvidia.com/gpu: 8
+                        memory: 1Gi
+                    limits:
+                        cpu: 500m
+                        nvidia.com/gpu: 8
+                        memory: 1Gi
+              generictemplate:
+                  apiVersion: v1
+                  kind: Pod
+                  metadata:
+                      name: pod-sample-0
+                      namespace: default
+                      labels:
+                          appwrapper.mcad.ibm.com: pod-sample
+                      annotations:
+                          scheduling.k8s.io/group-name: pod-sample
+                  spec:
+                      schedulerName: volcano
+                      priorityClassName: "default-priority"
+                      terminationGracePeriodSeconds: 5
+                      restartPolicy: Never
+                      containers:
+                          - name: container
+                            image: ubuntu
+                            imagePullPolicy: IfNotPresent
+                            command:
+                                - sh
+                                - -c
+                                - |
+                                  sleep 30
+                            resources:
+                                 requests:
+                                     cpu: 500m
+                                     nvidia.com/gpu: 8
+                                     memory: 1Gi
+                                 limits:
+                                     cpu: 500m
+                                     nvidia.com/gpu: 8
+                                     memory: 1Gi

@@ -1,0 +1,80 @@
+---
+# Source: generator/templates/job.yaml
+apiVersion: mcad.ibm.com/v1beta1
+kind: AppWrapper
+metadata:
+    name: job-1
+    namespace: default
+    labels:
+        experiment: exp-1
+        group: grp-1
+        project: model-1
+        quota-tree: A
+spec:
+    priority: 5
+    priorityslope: 0.0
+    schedulingSpec:
+        minAvailable: 4
+        requeuing:
+            timeInSeconds: 300
+            growthType: "none"
+            maxNumRequeuings: 1
+    resources:
+        GenericItems:
+            - replicas: 1
+              completionstatus: Complete
+              custompodresources:
+                  - replicas: 4
+                    requests:
+                        cpu: 0m
+                        nvidia.com/gpu: 8
+                        memory: 0Gi
+                    limits:
+                        cpu: 0m
+                        nvidia.com/gpu: 8
+                        memory: 0Gi
+              generictemplate:
+                  apiVersion: batch/v1
+                  kind: Job
+                  metadata:
+                      name: job-1
+                      namespace: default
+                      labels:
+                          appwrapper.mcad.ibm.com: job-1
+                          experiment: exp-1
+                          group: grp-1
+                          project: model-1
+                  spec:
+                      parallelism: 4
+                      completions: 4
+                      template:
+                          metadata:
+                              name: job-1
+                              namespace: default
+                              labels:
+                                  appwrapper.mcad.ibm.com: job-1
+                                  experiment: exp-1
+                                  group: grp-1
+                                  project: model-1
+                          spec:
+                              priorityClassName: "default-priority"
+                              terminationGracePeriodSeconds: 1
+                              restartPolicy: Never
+                              containers:
+                                  - name: pytorch
+                                    image: ubuntu
+                                    imagePullPolicy: IfNotPresent
+                                    command:
+                                        - sh
+                                        - -c
+                                        - |
+                                          sleep infinity
+                                    resources:
+                                        requests:
+                                            cpu: 0m
+                                            nvidia.com/gpu: 8
+                                            memory: 0Gi
+                                        limits:
+                                            cpu: 0m
+                                            nvidia.com/gpu: 8
+                                            memory: 0Gi

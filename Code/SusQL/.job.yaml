@@ -1,0 +1,224 @@
+---
+# Source: generator/templates/podgang.yaml
+apiVersion: mcad.ibm.com/v1beta1
+kind: AppWrapper
+metadata:
+    name: job-7
+    namespace: namespace-1
+spec:
+    priority: 5
+    priorityslope: 0.0
+    schedulingSpec:
+        minAvailable: 4
+        requeuing:
+            timeInSeconds: 300
+            growthType: "none"
+            maxNumRequeuings: 1
+    resources:
+        GenericItems:
+            - replicas: 1
+              generictemplate:
+                  apiVersion: scheduling.volcano.sh/v1beta1
+                  kind: PodGroup
+                  metadata:
+                      name: job-7
+                      namespace: namespace-1
+                      labels:
+                          appwrapper.mcad.ibm.com: job-7
+                          project-name: model-1
+                          experiment-name: exp-4
+                          group-name: grp-2
+                  spec:
+                      minMember: 4
+            - replicas: 1
+              completionstatus: "Complete"
+              custompodresources:
+                  - replicas: 1
+                    requests:
+                        cpu: 500m
+                        nvidia.com/gpu: 1
+                        memory: 1Gi
+                    limits:
+                        cpu: 500m
+                        nvidia.com/gpu: 1
+                        memory: 1Gi
+              generictemplate:
+                  apiVersion: v1
+                  kind: Pod
+                  metadata:
+                      name: job-7-0
+                      namespace: namespace-1
+                      labels:
+                          appwrapper.mcad.ibm.com: job-7
+                          project-name: model-1
+                          experiment-name: exp-4
+                          group-name: grp-2
+                      annotations:
+                          scheduling.k8s.io/group-name: job-7
+                  spec:
+                      schedulerName: volcano
+                      priorityClassName: "default-priority"
+                      terminationGracePeriodSeconds: 5
+                      restartPolicy: Never
+                      containers:
+                          - name: container
+                            image: ubuntu
+                            imagePullPolicy: IfNotPresent
+                            command:
+                                - sh
+                                - -c
+                                - |
+                                  sleep 45
+                            resources:
+                                 requests:
+                                     cpu: 500m
+                                     nvidia.com/gpu: 1
+                                     memory: 1Gi
+                                 limits:
+                                     cpu: 500m
+                                     nvidia.com/gpu: 1
+                                     memory: 1Gi
+            - replicas: 1
+              completionstatus: "Complete"
+              custompodresources:
+                  - replicas: 1
+                    requests:
+                        cpu: 500m
+                        nvidia.com/gpu: 1
+                        memory: 1Gi
+                    limits:
+                        cpu: 500m
+                        nvidia.com/gpu: 1
+                        memory: 1Gi
+              generictemplate:
+                  apiVersion: v1
+                  kind: Pod
+                  metadata:
+                      name: job-7-1
+                      namespace: namespace-1
+                      labels:
+                          appwrapper.mcad.ibm.com: job-7
+                          project-name: model-1
+                          experiment-name: exp-4
+                          group-name: grp-2
+                      annotations:
+                          scheduling.k8s.io/group-name: job-7
+                  spec:
+                      schedulerName: volcano
+                      priorityClassName: "default-priority"
+                      terminationGracePeriodSeconds: 5
+                      restartPolicy: Never
+                      containers:
+                          - name: container
+                            image: ubuntu
+                            imagePullPolicy: IfNotPresent
+                            command:
+                                - sh
+                                - -c
+                                - |
+                                  sleep 45
+                            resources:
+                                 requests:
+                                     cpu: 500m
+                                     nvidia.com/gpu: 1
+                                     memory: 1Gi
+                                 limits:
+                                     cpu: 500m
+                                     nvidia.com/gpu: 1
+                                     memory: 1Gi
+            - replicas: 1
+              completionstatus: "Complete"
+              custompodresources:
+                  - replicas: 1
+                    requests:
+                        cpu: 500m
+                        nvidia.com/gpu: 1
+                        memory: 1Gi
+                    limits:
+                        cpu: 500m
+                        nvidia.com/gpu: 1
+                        memory: 1Gi
+              generictemplate:
+                  apiVersion: v1
+                  kind: Pod
+                  metadata:
+                      name: job-7-2
+                      namespace: namespace-1
+                      labels:
+                          appwrapper.mcad.ibm.com: job-7
+                          project-name: model-1
+                          experiment-name: exp-4
+                          group-name: grp-2
+                      annotations:
+                          scheduling.k8s.io/group-name: job-7
+                  spec:
+                      schedulerName: volcano
+                      priorityClassName: "default-priority"
+                      terminationGracePeriodSeconds: 5
+                      restartPolicy: Never
+                      containers:
+                          - name: container
+                            image: ubuntu
+                            imagePullPolicy: IfNotPresent
+                            command:
+                                - sh
+                                - -c
+                                - |
+                                  sleep 45
+                            resources:
+                                 requests:
+                                     cpu: 500m
+                                     nvidia.com/gpu: 1
+                                     memory: 1Gi
+                                 limits:
+                                     cpu: 500m
+                                     nvidia.com/gpu: 1
+                                     memory: 1Gi
+            - replicas: 1
+              completionstatus: "Complete"
+              custompodresources:
+                  - replicas: 1
+                    requests:
+                        cpu: 500m
+                        nvidia.com/gpu: 1
+                        memory: 1Gi
+                    limits:
+                        cpu: 500m
+                        nvidia.com/gpu: 1
+                        memory: 1Gi
+              generictemplate:
+                  apiVersion: v1
+                  kind: Pod
+                  metadata:
+                      name: job-7-3
+                      namespace: namespace-1
+                      labels:
+                          appwrapper.mcad.ibm.com: job-7
+                          project-name: model-1
+                          experiment-name: exp-4
+                          group-name: grp-2
+                      annotations:
+                          scheduling.k8s.io/group-name: job-7
+                  spec:
+                      schedulerName: volcano
+                      priorityClassName: "default-priority"
+                      terminationGracePeriodSeconds: 5
+                      restartPolicy: Never
+                      containers:
+                          - name: container
+                            image: ubuntu
+                            imagePullPolicy: IfNotPresent
+                            command:
+                                - sh
+                                - -c
+                                - |
+                                  sleep 45
+                            resources:
+                                 requests:
+                                     cpu: 500m
+                                     nvidia.com/gpu: 1
+                                     memory: 1Gi
+                                 limits:
+                                     cpu: 500m
+                                     nvidia.com/gpu: 1
+                                     memory: 1Gi
